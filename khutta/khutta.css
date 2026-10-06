@@ -1,0 +1,649 @@
+/* =========================
+   COLORS
+========================= */
+
+:root {
+    --green: #0a2a1c;
+    --green2: #06190f;
+    --card: #14402b;
+    --cream: #f7f0df;
+    --gold: #f5bd55;
+    --mint: #65e6bf;
+    --white: #ffffff;
+    --black: #111111;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    background: var(--green);
+    color: #ffffff;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   LOGO TRANSPARENCY
+   اللوقو أبيض على خلفية سوداء، فنستخدم blend mode
+   عشان الأسود يختفي ويصير شفاف فوق أي خلفية.
+========================= */
+
+/* الوضع الداكن / البطاقة: الأسود يختفي */
+/*
+   contrast(1.8) يحوّل الأسود شبه الأسود (حواف/ضباب ضغط الـ JPG)
+   إلى أسود نقي قبل الدمج، فما تظهر أي حواف حول اللوقو.
+*/
+.logo {
+    background: transparent;
+    filter: contrast(1.8);
+    mix-blend-mode: screen;
+}
+
+/* الوضع الفاتح: نقلب الألوان فيصير اللوقو داكن والأبيض يختفي بدون حواف */
+body.light .logo {
+    filter: contrast(1.8) invert(1);
+    mix-blend-mode: multiply;
+}
+
+/* الهيدر أبيض دايماً، فلوقو الهيدر داكن (أخضر غامق) */
+header .site-logo {
+    filter: contrast(1.8) invert(1);
+    mix-blend-mode: multiply;
+}
+
+/* البطاقة دايماً خضراء داكنة، فاللوقو فيها يبقى أبيض */
+.card .logo,
+body.light .card .logo {
+    filter: contrast(1.8);
+    mix-blend-mode: screen;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    min-height: 84px;
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    justify-content: space-between;
+
+    /* اللوقو دايماً على اليسار */
+    direction: ltr;
+
+    /* الهيدر أبيض في كل الأوضاع */
+    background: rgba(255, 255, 255, 0.97);
+    color: #0a2a1c;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(10, 42, 28, 0.12);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.10);
+    transition: box-shadow 0.25s;
+}
+
+header.scrolled {
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.18);
+}
+
+/* اتجاه النص داخل القائمة يتبع لغة الصفحة */
+html[dir="rtl"] nav { direction: rtl; }
+html[dir="ltr"] nav { direction: ltr; }
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    width: 125px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    flex: 1;
+}
+
+nav a {
+    position: relative;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-weight: 700;
+    color: #0a2a1c;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--gold);
+    transform: translateX(-50%);
+    transition: width 0.2s;
+}
+
+nav a:hover {
+    background: #0a2a1c;
+    color: #ffffff;
+}
+
+nav a:hover::after {
+    width: 40%;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.actions button {
+    border: 2px solid #0a2a1c;
+    background: #ffffff;
+    color: #0a2a1c;
+    border-radius: 12px;
+    padding: 9px 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.actions select {
+    border: 2px solid #0a2a1c;
+    background: #ffffff;
+    color: #0a2a1c;
+    border-radius: 12px;
+    padding: 9px 12px;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background: #0a2a1c;
+    color: #ffffff;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 730px;
+    padding: 65px 5% 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-logo {
+    width: min(280px, 65vw);
+    height: auto;
+    display: block;
+    margin: 0 auto 25px;
+    object-fit: contain;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.15;
+    margin-bottom: 24px;
+}
+
+.hero h1 .accent {
+    color: var(--mint);
+}
+
+.hero > p:not(.eyebrow) {
+    max-width: 760px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.primary,
+.secondary {
+    min-width: 205px;
+    padding: 15px 24px;
+    border-radius: 15px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.primary {
+    background: var(--gold);
+    color: #182018;
+}
+
+.secondary {
+    border: 2px solid #ffffff;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    width: min(1050px, 90%);
+    margin: auto;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.section h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    margin-bottom: 20px;
+}
+
+.section > p:not(.eyebrow) {
+    line-height: 1.9;
+    max-width: 720px;
+    margin: auto;
+}
+
+/* =========================
+   JOURNEY FORM
+========================= */
+
+.journey-form {
+    max-width: 700px;
+    margin: 30px auto 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.journey-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: start;
+}
+
+.journey-form select {
+    padding: 13px;
+    border-radius: 12px;
+    border: 2px solid rgba(255,255,255,0.33);
+    background: rgba(255,255,255,0.07);
+    color: inherit;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.journey-form select option {
+    color: #111111;
+}
+
+.journey-form button {
+    grid-column: 1 / -1;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.journey {
+    max-width: 700px;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.journey div {
+    padding: 22px;
+    border: 2px solid rgba(255,255,255,0.33);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.journey span {
+    color: var(--mint);
+    font-size: 1.2rem;
+}
+
+.second-logo {
+    width: 210px;
+    height: auto;
+    display: block;
+    margin: 40px auto 0;
+    object-fit: contain;
+}
+
+/* =========================
+   MEMBERSHIP CARD
+========================= */
+
+.card-section {
+    padding-bottom: 125px;
+}
+
+.card-empty {
+    max-width: 650px;
+    margin: 35px auto 18px;
+    padding: 40px 24px;
+    border: 2px dashed rgba(255,255,255,0.33);
+    border-radius: 28px;
+    line-height: 1.9;
+    opacity: 0.85;
+}
+
+.card {
+    width: min(650px, 100%);
+    min-height: 390px;
+    margin: 35px auto 18px;
+    padding: 28px;
+    border-radius: 28px;
+    background: var(--card);
+    color: #ffffff;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+    text-align: left;
+    animation: cardIn 0.5s ease;
+}
+
+@keyframes cardIn {
+    from { opacity: 0; transform: translateY(20px) scale(0.97); }
+    to   { opacity: 1; transform: none; }
+}
+
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-logo {
+    width: 150px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.status {
+    border: 1px solid #8bf0c7;
+    color: #8bf0c7;
+    border-radius: 999px;
+    padding: 7px 12px;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+.card-title {
+    margin: 23px 0;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.info div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.info small,
+.card-bottom small {
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+.card-bottom {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+}
+
+.card-bottom > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-bottom b {
+    font-size: 0.78rem;
+}
+
+#qrcode {
+    width: 105px;
+    height: 105px;
+    background: #ffffff;
+    padding: 7px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+}
+
+.note {
+    opacity: 0.8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: var(--green2);
+    padding: 60px 5% 20px;
+    border-top: 1px solid rgba(255,255,255,0.13);
+}
+
+.footer-grid {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footer-grid > div {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.footer-grid h3 {
+    color: var(--gold);
+}
+
+.footer-grid p {
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.social a {
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(255,255,255,0.27);
+    border-radius: 14px;
+    display: grid;
+    place-items: center;
+    font-size: 1.4rem;
+    transition: 0.2s;
+}
+
+.social a:hover {
+    transform: translateY(-3px);
+    border-color: var(--gold);
+}
+
+.copyright {
+    max-width: 1050px;
+    margin: 40px auto 0;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,0.13);
+    text-align: center;
+    opacity: 0.75;
+}
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+body.light {
+    background: var(--cream);
+    color: #10271d;
+}
+
+body.light .secondary {
+    color: #10271d;
+    border-color: #10271d;
+}
+
+body.light .card-empty,
+body.light .journey div,
+body.light .journey-form select {
+    border-color: rgba(16,39,29,0.35);
+}
+
+body.light .journey-form select {
+    background: #ffffff;
+}
+
+body.light footer {
+    background: #eadfca;
+    color: #10271d;
+    border-top-color: rgba(0,0,0,0.12);
+}
+
+body.light .copyright {
+    border-top-color: rgba(0,0,0,0.12);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 850px) {
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .brand {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    nav a {
+        white-space: nowrap;
+    }
+
+    .actions {
+        position: absolute;
+        top: 20px;
+        right: 18px;
+    }
+
+    .site-logo {
+        width: 100px;
+        height: 50px;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .hero {
+        min-height: 650px;
+    }
+
+    .hero-logo {
+        width: 230px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .card-bottom {
+        align-items: center;
+    }
+
+    .journey-form {
+        grid-template-columns: 1fr;
+    }
+}

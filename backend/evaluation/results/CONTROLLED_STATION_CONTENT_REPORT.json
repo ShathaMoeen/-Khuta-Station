@@ -1,0 +1,830 @@
+{
+  "passage_count_before": 166774,
+  "passage_count_after": 166774,
+  "stations": [
+    {
+      "id": 12,
+      "code": "BADR-01",
+      "topic": "Battle of Badr"
+    },
+    {
+      "id": 13,
+      "code": "HADITH-01",
+      "topic": "Sunnah and Hadith"
+    },
+    {
+      "id": 11,
+      "code": "HIJRAH-01",
+      "topic": "Hijrah to Madinah"
+    },
+    {
+      "id": 9,
+      "code": "QURAN-01",
+      "topic": "Quran"
+    },
+    {
+      "id": 10,
+      "code": "WAHY-01",
+      "topic": "Beginning of Revelation"
+    }
+  ],
+  "content_rows": [
+    {
+      "station_code": "QURAN-01",
+      "station_content_id": 9,
+      "lang": "ar",
+      "level": "beginner",
+      "title": "القرآن الكريم",
+      "body": "القرآن الكريم كتاب الله المنزل على النبي محمد ﷺ. بدأت آيات الوحي الأولى بالأمر بالقراءة، وتبرز هذه البداية مكانة العلم والتعلّم. في هذه المحطة يتعرّف الزائر على القرآن من خلال آيات موثقة ومراجع واضحة.",
+      "references": [
+        "Quran 96:1",
+        "Quran 96:2",
+        "Quran 96:3",
+        "Quran 96:4",
+        "Quran 96:5"
+      ],
+      "local_passage_ids": [
+        "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+        "be78d863615f938338f255ea51c27c9ca349686c",
+        "37abf956c3134f77007b4e491765708e9a34b09e",
+        "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+        "18600315950025708ffe7bdb7543dac606a886b6"
+      ]
+    },
+    {
+      "station_code": "QURAN-01",
+      "station_content_id": 10,
+      "lang": "ar",
+      "level": "intermediate",
+      "title": "القرآن الكريم",
+      "body": "بدأ نزول الوحي على النبي محمد ﷺ بآيات من سورة العلق: 96:1-5. وتبدأ هذه الآيات بالأمر بالقراءة باسم الله، ثم تشير إلى خلق الإنسان والتعليم بالقلم. ويرد رقم السورة والآية مع النص ليتمكن الزائر من الرجوع إلى مصدره.",
+      "references": [
+        "Quran 96:1",
+        "Quran 96:2",
+        "Quran 96:3",
+        "Quran 96:4",
+        "Quran 96:5"
+      ],
+      "local_passage_ids": [
+        "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+        "be78d863615f938338f255ea51c27c9ca349686c",
+        "37abf956c3134f77007b4e491765708e9a34b09e",
+        "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+        "18600315950025708ffe7bdb7543dac606a886b6"
+      ]
+    },
+    {
+      "station_code": "QURAN-01",
+      "station_content_id": 11,
+      "lang": "ar",
+      "level": "advanced",
+      "title": "القرآن الكريم",
+      "body": "تمثل الآيات 96:1-5 من سورة العلق محورًا لفهم بداية الوحي. ويربط حديث عائشة رضي الله عنها في صحيح البخاري رقم 3 بين هذه الآيات وبداية نزول الوحي على النبي ﷺ في غار حراء. ويُعرض النص القرآني والمرجع الحديثي كلٌّ مع مصدره.",
+      "references": [
+        "Quran 96:1",
+        "Quran 96:2",
+        "Quran 96:3",
+        "Quran 96:4",
+        "Quran 96:5",
+        "Sahih al-Bukhari 3"
+      ],
+      "local_passage_ids": [
+        "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+        "be78d863615f938338f255ea51c27c9ca349686c",
+        "37abf956c3134f77007b4e491765708e9a34b09e",
+        "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+        "18600315950025708ffe7bdb7543dac606a886b6",
+        "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77"
+      ]
+    },
+    {
+      "station_code": "QURAN-01",
+      "station_content_id": 12,
+      "lang": "en",
+      "level": "beginner",
+      "title": "The Holy Qur'an",
+      "body": "The Holy Qur'an is the Book of God revealed to the Prophet Muhammad ﷺ. The first verses of revelation began with the command to read, highlighting the importance of knowledge and learning. At this station, visitors explore the Qur'an through documented verses and clear references.",
+      "references": [
+        "Quran 96:1",
+        "Quran 96:2",
+        "Quran 96:3",
+        "Quran 96:4",
+        "Quran 96:5"
+      ],
+      "local_passage_ids": [
+        "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+        "be78d863615f938338f255ea51c27c9ca349686c",
+        "37abf956c3134f77007b4e491765708e9a34b09e",
+        "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+        "18600315950025708ffe7bdb7543dac606a886b6"
+      ]
+    },
+    {
+      "station_code": "QURAN-01",
+      "station_content_id": 13,
+      "lang": "en",
+      "level": "intermediate",
+      "title": "The Holy Qur'an",
+      "body": "The revelation to the Prophet Muhammad ﷺ began with verses from Surat Al-‘Alaq: 96:1–5. These verses begin with the command to read in the name of God, then refer to the creation of the human being and teaching by the pen. The surah and verse numbers appear with the text so visitors can return to its source.",
+      "references": [
+        "Quran 96:1",
+        "Quran 96:2",
+        "Quran 96:3",
+        "Quran 96:4",
+        "Quran 96:5"
+      ],
+      "local_passage_ids": [
+        "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+        "be78d863615f938338f255ea51c27c9ca349686c",
+        "37abf956c3134f77007b4e491765708e9a34b09e",
+        "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+        "18600315950025708ffe7bdb7543dac606a886b6"
+      ]
+    },
+    {
+      "station_code": "QURAN-01",
+      "station_content_id": 14,
+      "lang": "en",
+      "level": "advanced",
+      "title": "The Holy Qur'an",
+      "body": "Verses 96:1–5 of Surat Al-‘Alaq are central to understanding the beginning of revelation. The narration of Aisha, may God be pleased with her, in Sahih al-Bukhari 3 links these verses with the beginning of revelation to the Prophet ﷺ in the Cave of Hira. The Qur’anic text and the hadith reference are each presented with their source.",
+      "references": [
+        "Quran 96:1",
+        "Quran 96:2",
+        "Quran 96:3",
+        "Quran 96:4",
+        "Quran 96:5",
+        "Sahih al-Bukhari 3"
+      ],
+      "local_passage_ids": [
+        "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+        "be78d863615f938338f255ea51c27c9ca349686c",
+        "37abf956c3134f77007b4e491765708e9a34b09e",
+        "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+        "18600315950025708ffe7bdb7543dac606a886b6",
+        "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77"
+      ]
+    },
+    {
+      "station_code": "WAHY-01",
+      "station_content_id": 15,
+      "lang": "ar",
+      "level": "beginner",
+      "title": "بداية الوحي",
+      "body": "بدأ الوحي إلى النبي محمد ﷺ في غار حراء. وتروي عائشة رضي الله عنها أن المَلَك جاء إلى النبي ﷺ وقال له: «اقرأ»، ثم نزلت الآيات الأولى من سورة العلق.",
+      "references": [
+        "Sahih al-Bukhari 3",
+        "Quran 96:1",
+        "Quran 96:2",
+        "Quran 96:3",
+        "Quran 96:4",
+        "Quran 96:5"
+      ],
+      "local_passage_ids": [
+        "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77",
+        "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+        "be78d863615f938338f255ea51c27c9ca349686c",
+        "37abf956c3134f77007b4e491765708e9a34b09e",
+        "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+        "18600315950025708ffe7bdb7543dac606a886b6"
+      ]
+    },
+    {
+      "station_code": "WAHY-01",
+      "station_content_id": 16,
+      "lang": "ar",
+      "level": "intermediate",
+      "title": "بداية الوحي",
+      "body": "تروي عائشة رضي الله عنها في صحيح البخاري أن النبي ﷺ كان يخلو في غار حراء للعبادة، حتى جاءه المَلَك وقال له: «اقرأ». وارتبط هذا الحدث بنزول بداية سورة العلق. وتُعد الرواية من المصادر الموثقة لخبر بدء الوحي.",
+      "references": [
+        "Sahih al-Bukhari 3",
+        "Sahih Muslim 160",
+        "Quran 96:1",
+        "Quran 96:2",
+        "Quran 96:3",
+        "Quran 96:4",
+        "Quran 96:5"
+      ],
+      "local_passage_ids": [
+        "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77",
+        "76f07fd73b4ef74f6b74b05d59a32433dc093ac3",
+        "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+        "be78d863615f938338f255ea51c27c9ca349686c",
+        "37abf956c3134f77007b4e491765708e9a34b09e",
+        "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+        "18600315950025708ffe7bdb7543dac606a886b6"
+      ]
+    },
+    {
+      "station_code": "WAHY-01",
+      "station_content_id": 17,
+      "lang": "ar",
+      "level": "advanced",
+      "title": "بداية الوحي",
+      "body": "يروي حديث عائشة رضي الله عنها تفاصيل بدء الوحي، من الرؤيا الصالحة وخلوة النبي ﷺ في غار حراء إلى مجيء المَلَك ونزول بداية سورة العلق. ورد أصل الرواية في صحيح البخاري رقم 3، كما رواها مسلم في صحيحه رقم 160. وتعرض الرواية والآيات مع مراجع كل منهما.",
+      "references": [
+        "Sahih al-Bukhari 3",
+        "Sahih Muslim 160",
+        "Quran 96:1",
+        "Quran 96:2",
+        "Quran 96:3",
+        "Quran 96:4",
+        "Quran 96:5"
+      ],
+      "local_passage_ids": [
+        "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77",
+        "76f07fd73b4ef74f6b74b05d59a32433dc093ac3",
+        "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+        "be78d863615f938338f255ea51c27c9ca349686c",
+        "37abf956c3134f77007b4e491765708e9a34b09e",
+        "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+        "18600315950025708ffe7bdb7543dac606a886b6"
+      ]
+    },
+    {
+      "station_code": "WAHY-01",
+      "station_content_id": 18,
+      "lang": "en",
+      "level": "beginner",
+      "title": "Beginning of Revelation",
+      "body": "Revelation to the Prophet Muhammad ﷺ began in the Cave of Hira. Aisha, may God be pleased with her, narrates that the angel came to the Prophet ﷺ and said to him, “Read,” and then the first verses of Surat Al-‘Alaq were revealed.",
+      "references": [
+        "Sahih al-Bukhari 3",
+        "Quran 96:1",
+        "Quran 96:2",
+        "Quran 96:3",
+        "Quran 96:4",
+        "Quran 96:5"
+      ],
+      "local_passage_ids": [
+        "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77",
+        "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+        "be78d863615f938338f255ea51c27c9ca349686c",
+        "37abf956c3134f77007b4e491765708e9a34b09e",
+        "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+        "18600315950025708ffe7bdb7543dac606a886b6"
+      ]
+    },
+    {
+      "station_code": "WAHY-01",
+      "station_content_id": 19,
+      "lang": "en",
+      "level": "intermediate",
+      "title": "Beginning of Revelation",
+      "body": "Aisha, may God be pleased with her, narrates in Sahih al-Bukhari that the Prophet ﷺ would retreat to the Cave of Hira for worship, until the angel came to him and said, “Read.” This event was connected with the revelation of the beginning of Surat Al-‘Alaq. The narration is a documented source for the account of the beginning of revelation.",
+      "references": [
+        "Sahih al-Bukhari 3",
+        "Sahih Muslim 160",
+        "Quran 96:1",
+        "Quran 96:2",
+        "Quran 96:3",
+        "Quran 96:4",
+        "Quran 96:5"
+      ],
+      "local_passage_ids": [
+        "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77",
+        "76f07fd73b4ef74f6b74b05d59a32433dc093ac3",
+        "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+        "be78d863615f938338f255ea51c27c9ca349686c",
+        "37abf956c3134f77007b4e491765708e9a34b09e",
+        "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+        "18600315950025708ffe7bdb7543dac606a886b6"
+      ]
+    },
+    {
+      "station_code": "WAHY-01",
+      "station_content_id": 20,
+      "lang": "en",
+      "level": "advanced",
+      "title": "Beginning of Revelation",
+      "body": "The narration of Aisha, may God be pleased with her, recounts details of the beginning of revelation, from the true visions and the Prophet’s ﷺ retreat in the Cave of Hira to the angel’s arrival and the revelation of the beginning of Surat Al-‘Alaq. The narration is recorded in Sahih al-Bukhari 3 and was also narrated by Muslim in his Sahih, number 160. The narration and verses are presented with their respective references.",
+      "references": [
+        "Sahih al-Bukhari 3",
+        "Sahih Muslim 160",
+        "Quran 96:1",
+        "Quran 96:2",
+        "Quran 96:3",
+        "Quran 96:4",
+        "Quran 96:5"
+      ],
+      "local_passage_ids": [
+        "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77",
+        "76f07fd73b4ef74f6b74b05d59a32433dc093ac3",
+        "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+        "be78d863615f938338f255ea51c27c9ca349686c",
+        "37abf956c3134f77007b4e491765708e9a34b09e",
+        "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+        "18600315950025708ffe7bdb7543dac606a886b6"
+      ]
+    },
+    {
+      "station_code": "HIJRAH-01",
+      "station_content_id": 21,
+      "lang": "ar",
+      "level": "beginner",
+      "title": "الهجرة إلى المدينة",
+      "body": "هاجر النبي محمد ﷺ من مكة إلى المدينة بصحبة أبي بكر رضي الله عنه. ويشير القرآن إلى وجودهما في الغار، كما تروي الأحاديث الصحيحة جانبًا من أحداث الرحلة.",
+      "references": [
+        "Quran 9:40",
+        "Sahih al-Bukhari 5807"
+      ],
+      "local_passage_ids": [
+        "b1fc3f4c375823406cd257241fed68300c9e4af3",
+        "2d5eb2f7011c3908572dc9e99eeab9ac0231da99"
+      ]
+    },
+    {
+      "station_code": "HIJRAH-01",
+      "station_content_id": 22,
+      "lang": "ar",
+      "level": "intermediate",
+      "title": "الهجرة إلى المدينة",
+      "body": "من أحداث الهجرة النبوية لجوء النبي ﷺ وأبي بكر رضي الله عنه إلى غار ثور. وتشير الآية 9:40 من سورة التوبة إلى وجود النبي ﷺ مع صاحبه في الغار، بينما تروي عائشة رضي الله عنها في صحيح البخاري تفاصيل من الاستعداد للهجرة والإقامة في الغار.",
+      "references": [
+        "Quran 9:40",
+        "Sahih al-Bukhari 5807"
+      ],
+      "local_passage_ids": [
+        "b1fc3f4c375823406cd257241fed68300c9e4af3",
+        "2d5eb2f7011c3908572dc9e99eeab9ac0231da99"
+      ]
+    },
+    {
+      "station_code": "HIJRAH-01",
+      "station_content_id": 23,
+      "lang": "ar",
+      "level": "advanced",
+      "title": "الهجرة إلى المدينة",
+      "body": "تجمع دراسة الهجرة بين النص القرآني والرواية الحديثية. تشير سورة التوبة 9:40 إلى النبي ﷺ وصاحبه في الغار، وتورد رواية عائشة رضي الله عنها في صحيح البخاري تفاصيل من تجهيز الرحلة والإقامة في غار ثور ثلاث ليالٍ. ويُقرأ كل دليل مع نوع مصدره ومرجعه.",
+      "references": [
+        "Quran 9:40",
+        "Sahih al-Bukhari 5807"
+      ],
+      "local_passage_ids": [
+        "b1fc3f4c375823406cd257241fed68300c9e4af3",
+        "2d5eb2f7011c3908572dc9e99eeab9ac0231da99"
+      ]
+    },
+    {
+      "station_code": "HIJRAH-01",
+      "station_content_id": 24,
+      "lang": "en",
+      "level": "beginner",
+      "title": "The Hijrah to Madinah",
+      "body": "The Prophet Muhammad ﷺ migrated from Mecca to Medina with Abu Bakr, may God be pleased with him. The Qur’an refers to the two of them in the cave, and authentic hadith narrations relate aspects of the journey.",
+      "references": [
+        "Quran 9:40",
+        "Sahih al-Bukhari 5807"
+      ],
+      "local_passage_ids": [
+        "b1fc3f4c375823406cd257241fed68300c9e4af3",
+        "2d5eb2f7011c3908572dc9e99eeab9ac0231da99"
+      ]
+    },
+    {
+      "station_code": "HIJRAH-01",
+      "station_content_id": 25,
+      "lang": "en",
+      "level": "intermediate",
+      "title": "The Hijrah to Madinah",
+      "body": "Among the events of the Prophetic Hijrah was the Prophet ﷺ and Abu Bakr, may God be pleased with him, taking refuge in the Cave of Thawr. Verse 9:40 of Surat At-Tawbah refers to the Prophet ﷺ with his companion in the cave, while Aisha, may God be pleased with her, narrates in Sahih al-Bukhari details of preparations for the Hijrah and staying in the cave.",
+      "references": [
+        "Quran 9:40",
+        "Sahih al-Bukhari 5807"
+      ],
+      "local_passage_ids": [
+        "b1fc3f4c375823406cd257241fed68300c9e4af3",
+        "2d5eb2f7011c3908572dc9e99eeab9ac0231da99"
+      ]
+    },
+    {
+      "station_code": "HIJRAH-01",
+      "station_content_id": 26,
+      "lang": "en",
+      "level": "advanced",
+      "title": "The Hijrah to Madinah",
+      "body": "The study of the Hijrah brings together the Qur’anic text and hadith narration. Surat At-Tawbah 9:40 refers to the Prophet ﷺ and his companion in the cave, and Aisha’s narration in Sahih al-Bukhari relates details of preparing for the journey and staying in the Cave of Thawr for three nights. Each source is read with its type and reference.",
+      "references": [
+        "Quran 9:40",
+        "Sahih al-Bukhari 5807"
+      ],
+      "local_passage_ids": [
+        "b1fc3f4c375823406cd257241fed68300c9e4af3",
+        "2d5eb2f7011c3908572dc9e99eeab9ac0231da99"
+      ]
+    },
+    {
+      "station_code": "BADR-01",
+      "station_content_id": 27,
+      "lang": "ar",
+      "level": "beginner",
+      "title": "غزوة بدر",
+      "body": "غزوة بدر من الأحداث البارزة في السيرة النبوية، وقد ورد اسم بدر صراحة في القرآن الكريم في سورة آل عمران، الآية 123. وتتناول هذه المحطة الحدث من خلال الأدلة الموثقة المرتبطة به.",
+      "references": [
+        "Quran 3:123"
+      ],
+      "local_passage_ids": [
+        "74a24002de6cb4e43a98b054fab0130e1543019f"
+      ]
+    },
+    {
+      "station_code": "BADR-01",
+      "station_content_id": 28,
+      "lang": "ar",
+      "level": "intermediate",
+      "title": "غزوة بدر",
+      "body": "يذكر القرآن الكريم بدرًا صراحة في سورة آل عمران 3:123 في سياق تذكير المؤمنين بنصر الله لهم. ويمكن قراءة الآيات التالية 3:124-127 لفهم السياق القرآني المتصل بالآية، مع أرقام الآيات ومراجعها.",
+      "references": [
+        "Quran 3:123",
+        "Quran 3:124",
+        "Quran 3:125",
+        "Quran 3:126",
+        "Quran 3:127"
+      ],
+      "local_passage_ids": [
+        "74a24002de6cb4e43a98b054fab0130e1543019f",
+        "4b6c9e9868c98250b8b1a5fa3d520d77613b5249",
+        "8b59347ff11f8dedc10cdfe3f1cce8e7caf2635f",
+        "088141735e5473ae8668268c4286cb1b8b726d65",
+        "b5a6e23fdd0972f4a538f875d6b4727b56e9ac1e"
+      ]
+    },
+    {
+      "station_code": "BADR-01",
+      "station_content_id": 29,
+      "lang": "ar",
+      "level": "advanced",
+      "title": "غزوة بدر",
+      "body": "يمثل القرآن مصدرًا أساسيًا لدراسة بدر؛ إذ يرد اسم بدر صراحة في سورة آل عمران 3:123، ويتواصل السياق في الآيات 3:124-127. ويفصل عرض النص القرآني عن التفاصيل التاريخية التي تتطلب مصادر مستقلة موثقة.",
+      "references": [
+        "Quran 3:123",
+        "Quran 3:124",
+        "Quran 3:125",
+        "Quran 3:126",
+        "Quran 3:127"
+      ],
+      "local_passage_ids": [
+        "74a24002de6cb4e43a98b054fab0130e1543019f",
+        "4b6c9e9868c98250b8b1a5fa3d520d77613b5249",
+        "8b59347ff11f8dedc10cdfe3f1cce8e7caf2635f",
+        "088141735e5473ae8668268c4286cb1b8b726d65",
+        "b5a6e23fdd0972f4a538f875d6b4727b56e9ac1e"
+      ]
+    },
+    {
+      "station_code": "BADR-01",
+      "station_content_id": 30,
+      "lang": "en",
+      "level": "beginner",
+      "title": "The Battle of Badr",
+      "body": "The Battle of Badr is a notable event in the Prophetic biography. The name Badr is explicitly mentioned in the Holy Qur’an in Surat Al ‘Imran, verse 123. This station presents the event through its related documented evidence.",
+      "references": [
+        "Quran 3:123"
+      ],
+      "local_passage_ids": [
+        "74a24002de6cb4e43a98b054fab0130e1543019f"
+      ]
+    },
+    {
+      "station_code": "BADR-01",
+      "station_content_id": 31,
+      "lang": "en",
+      "level": "intermediate",
+      "title": "The Battle of Badr",
+      "body": "The Holy Qur’an explicitly mentions Badr in Surat Al ‘Imran 3:123, in the context of reminding the believers of God’s victory for them. The following verses, 3:124–127, can be read to understand the Qur’anic context connected with the verse, with verse numbers and references.",
+      "references": [
+        "Quran 3:123",
+        "Quran 3:124",
+        "Quran 3:125",
+        "Quran 3:126",
+        "Quran 3:127"
+      ],
+      "local_passage_ids": [
+        "74a24002de6cb4e43a98b054fab0130e1543019f",
+        "4b6c9e9868c98250b8b1a5fa3d520d77613b5249",
+        "8b59347ff11f8dedc10cdfe3f1cce8e7caf2635f",
+        "088141735e5473ae8668268c4286cb1b8b726d65",
+        "b5a6e23fdd0972f4a538f875d6b4727b56e9ac1e"
+      ]
+    },
+    {
+      "station_code": "BADR-01",
+      "station_content_id": 32,
+      "lang": "en",
+      "level": "advanced",
+      "title": "The Battle of Badr",
+      "body": "The Qur’an is a primary source for studying Badr: the name Badr appears explicitly in Surat Al ‘Imran 3:123, and the context continues in verses 3:124–127. The Qur’anic text is presented separately from historical details that require independent, documented sources.",
+      "references": [
+        "Quran 3:123",
+        "Quran 3:124",
+        "Quran 3:125",
+        "Quran 3:126",
+        "Quran 3:127"
+      ],
+      "local_passage_ids": [
+        "74a24002de6cb4e43a98b054fab0130e1543019f",
+        "4b6c9e9868c98250b8b1a5fa3d520d77613b5249",
+        "8b59347ff11f8dedc10cdfe3f1cce8e7caf2635f",
+        "088141735e5473ae8668268c4286cb1b8b726d65",
+        "b5a6e23fdd0972f4a538f875d6b4727b56e9ac1e"
+      ]
+    },
+    {
+      "station_code": "HADITH-01",
+      "station_content_id": 33,
+      "lang": "ar",
+      "level": "beginner",
+      "title": "السنة والحديث",
+      "body": "تنقل الأحاديث النبوية روايات عن أقوال النبي ﷺ وأفعاله وأحواله. ويساعد ذكر مصدر الحديث ومرجعه إلى جانب نصه على معرفة موضع الرواية.",
+      "references": [
+        "Sahih al-Bukhari 3"
+      ],
+      "local_passage_ids": [
+        "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77"
+      ]
+    },
+    {
+      "station_code": "HADITH-01",
+      "station_content_id": 34,
+      "lang": "ar",
+      "level": "intermediate",
+      "title": "السنة والحديث",
+      "body": "تساعد معلومات الكتاب ورقم الحديث والراوي والمصدر على تتبع الرواية والتحقق منها. ومن المفيد التمييز بين نص الحديث، وبيانات مرجعه، والشرح التعليمي المبني عليه.",
+      "references": [
+        "Sahih al-Bukhari 3"
+      ],
+      "local_passage_ids": [
+        "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77"
+      ]
+    },
+    {
+      "station_code": "HADITH-01",
+      "station_content_id": 35,
+      "lang": "ar",
+      "level": "advanced",
+      "title": "السنة والحديث",
+      "body": "ترتبط دراسة الحديث بنصه ومصدره ومرجعه وبيانات التحقق المتاحة. ولا يكفي وجود الحديث في مصدر ما وحده للحكم بصحته؛ بل يُرجع إلى بيانات المصدر والتحقق.",
+      "references": [
+        "Sahih al-Bukhari 3"
+      ],
+      "local_passage_ids": [
+        "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77"
+      ]
+    },
+    {
+      "station_code": "HADITH-01",
+      "station_content_id": 36,
+      "lang": "en",
+      "level": "beginner",
+      "title": "Sunnah and Hadith",
+      "body": "Prophetic hadith narrations relate the Prophet’s ﷺ sayings, actions, and circumstances. Naming the source and reference alongside the text helps identify where the narration is found.",
+      "references": [
+        "Sahih al-Bukhari 3"
+      ],
+      "local_passage_ids": [
+        "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77"
+      ]
+    },
+    {
+      "station_code": "HADITH-01",
+      "station_content_id": 37,
+      "lang": "en",
+      "level": "intermediate",
+      "title": "Sunnah and Hadith",
+      "body": "Information such as the book, hadith number, narrator, and source helps trace and verify a narration. It is useful to distinguish the hadith text, its reference details, and the educational explanation based on it.",
+      "references": [
+        "Sahih al-Bukhari 3"
+      ],
+      "local_passage_ids": [
+        "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77"
+      ]
+    },
+    {
+      "station_code": "HADITH-01",
+      "station_content_id": 38,
+      "lang": "en",
+      "level": "advanced",
+      "title": "Sunnah and Hadith",
+      "body": "The study of a hadith is connected with its text, source, reference, and available verification information. The presence of a hadith in a source alone is not enough to judge its authenticity; the source and verification information must be consulted.",
+      "references": [
+        "Sahih al-Bukhari 3"
+      ],
+      "local_passage_ids": [
+        "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77"
+      ]
+    }
+  ],
+  "provenance_rows_created": 112,
+  "station_passages_rows_created": 19,
+  "station_content_rows_replaced": 30,
+  "old_demo_provenance_rows_replaced": 192,
+  "old_demo_station_passage_rows_replaced": 32,
+  "references": {
+    "Quran 96:1": {
+      "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+      "local_reference": "96:1",
+      "source": "مصحف حفص"
+    },
+    "Quran 96:2": {
+      "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+      "local_reference": "96:2",
+      "source": "مصحف حفص"
+    },
+    "Quran 96:3": {
+      "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+      "local_reference": "96:3",
+      "source": "مصحف حفص"
+    },
+    "Quran 96:4": {
+      "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+      "local_reference": "96:4",
+      "source": "مصحف حفص"
+    },
+    "Quran 96:5": {
+      "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+      "local_reference": "96:5",
+      "source": "مصحف حفص"
+    },
+    "Quran 9:40": {
+      "passage_id": "b1fc3f4c375823406cd257241fed68300c9e4af3",
+      "local_reference": "9:40",
+      "source": "مصحف حفص"
+    },
+    "Quran 3:123": {
+      "passage_id": "74a24002de6cb4e43a98b054fab0130e1543019f",
+      "local_reference": "3:123",
+      "source": "مصحف حفص"
+    },
+    "Quran 3:124": {
+      "passage_id": "4b6c9e9868c98250b8b1a5fa3d520d77613b5249",
+      "local_reference": "3:124",
+      "source": "مصحف حفص"
+    },
+    "Quran 3:125": {
+      "passage_id": "8b59347ff11f8dedc10cdfe3f1cce8e7caf2635f",
+      "local_reference": "3:125",
+      "source": "مصحف حفص"
+    },
+    "Quran 3:126": {
+      "passage_id": "088141735e5473ae8668268c4286cb1b8b726d65",
+      "local_reference": "3:126",
+      "source": "مصحف حفص"
+    },
+    "Quran 3:127": {
+      "passage_id": "b5a6e23fdd0972f4a538f875d6b4727b56e9ac1e",
+      "local_reference": "3:127",
+      "source": "مصحف حفص"
+    },
+    "Sahih al-Bukhari 3": {
+      "passage_id": "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77",
+      "local_reference": "bukhari:3",
+      "source": "quranlab/hadith:bukhari-ar"
+    },
+    "Sahih al-Bukhari 5807": {
+      "passage_id": "2d5eb2f7011c3908572dc9e99eeab9ac0231da99",
+      "local_reference": "bukhari:5807",
+      "source": "quranlab/hadith:bukhari-ar"
+    },
+    "Sahih Muslim 160": {
+      "passage_id": "76f07fd73b4ef74f6b74b05d59a32433dc093ac3",
+      "local_reference": "muslim:403",
+      "source": "quranlab/hadith:muslim-ar"
+    }
+  },
+  "local_muslim160": [
+    {
+      "id": "f83f33a089079492ab937f335b382b2d144cf2cf",
+      "reference": "muslim:160"
+    }
+  ],
+  "created_at": "2026-10-05T22:15:40.803925+03:00",
+  "approved_level3_source_count": 0,
+  "null_provenance_status_count": 0,
+  "station_passage_count_final": 19,
+  "stations_final": [
+    {
+      "code": "BADR-01",
+      "topic": "Badr / Seerah"
+    },
+    {
+      "code": "HADITH-01",
+      "topic": "Hadith"
+    },
+    {
+      "code": "HIJRAH-01",
+      "topic": "Hijrah / Seerah"
+    },
+    {
+      "code": "QURAN-01",
+      "topic": "Quran"
+    },
+    {
+      "code": "WAHY-01",
+      "topic": "Revelation / Seerah"
+    }
+  ],
+  "tests": {
+    "passed": 19,
+    "failed": 0,
+    "summary": "19 passed; 1 pytest cache permission warning, no test failures."
+  },
+  "reference_status": {
+    "Quran 96:1": {
+      "status": "FOUND",
+      "local_reference": "96:1",
+      "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+      "source": "مصحف حفص"
+    },
+    "Quran 96:2": {
+      "status": "FOUND",
+      "local_reference": "96:2",
+      "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+      "source": "مصحف حفص"
+    },
+    "Quran 96:3": {
+      "status": "FOUND",
+      "local_reference": "96:3",
+      "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+      "source": "مصحف حفص"
+    },
+    "Quran 96:4": {
+      "status": "FOUND",
+      "local_reference": "96:4",
+      "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+      "source": "مصحف حفص"
+    },
+    "Quran 96:5": {
+      "status": "FOUND",
+      "local_reference": "96:5",
+      "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+      "source": "مصحف حفص"
+    },
+    "Quran 9:40": {
+      "status": "FOUND",
+      "local_reference": "9:40",
+      "passage_id": "b1fc3f4c375823406cd257241fed68300c9e4af3",
+      "source": "مصحف حفص"
+    },
+    "Quran 3:123": {
+      "status": "FOUND",
+      "local_reference": "3:123",
+      "passage_id": "74a24002de6cb4e43a98b054fab0130e1543019f",
+      "source": "مصحف حفص"
+    },
+    "Quran 3:124": {
+      "status": "FOUND",
+      "local_reference": "3:124",
+      "passage_id": "4b6c9e9868c98250b8b1a5fa3d520d77613b5249",
+      "source": "مصحف حفص"
+    },
+    "Quran 3:125": {
+      "status": "FOUND",
+      "local_reference": "3:125",
+      "passage_id": "8b59347ff11f8dedc10cdfe3f1cce8e7caf2635f",
+      "source": "مصحف حفص"
+    },
+    "Quran 3:126": {
+      "status": "FOUND",
+      "local_reference": "3:126",
+      "passage_id": "088141735e5473ae8668268c4286cb1b8b726d65",
+      "source": "مصحف حفص"
+    },
+    "Quran 3:127": {
+      "status": "FOUND",
+      "local_reference": "3:127",
+      "passage_id": "b5a6e23fdd0972f4a538f875d6b4727b56e9ac1e",
+      "source": "مصحف حفص"
+    },
+    "Sahih al-Bukhari 3": {
+      "status": "FOUND",
+      "local_reference": "bukhari:3",
+      "passage_id": "bb9bec5713b6f005ee24fefeaf49ad4c95cc9a77",
+      "source": "quranlab/hadith:bukhari-ar"
+    },
+    "Sahih al-Bukhari 5807": {
+      "status": "FOUND",
+      "local_reference": "bukhari:5807",
+      "passage_id": "2d5eb2f7011c3908572dc9e99eeab9ac0231da99",
+      "source": "quranlab/hadith:bukhari-ar"
+    },
+    "Sahih Muslim 160": {
+      "status": "FOUND (exact content equivalent)",
+      "local_reference": "muslim:403",
+      "passage_id": "76f07fd73b4ef74f6b74b05d59a32433dc093ac3",
+      "note": "Local key muslim:160 exists but its record is a different narration; no mapping was made to that row."
+    }
+  },
+  "not_found_or_ambiguous": [],
+  "muslim160_local_nonmatching": {
+    "status": "NOT A MATCH",
+    "local_reference": "muslim:160",
+    "passage_id": "f83f33a089079492ab937f335b382b2d144cf2cf"
+  },
+  "safe_checks": {
+    "passage_count_unchanged": true,
+    "personal_fatwa_governance_tests_passed": true,
+    "level3_enabled": false,
+    "only_five_demo_stations_modified": true,
+    "visitor_body_checks_passed": true
+  }
+}

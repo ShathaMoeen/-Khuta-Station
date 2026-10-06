@@ -1,0 +1,2759 @@
+{
+  "title": "KHUTA BASELINE — BEFORE KNOWLEDGE EXPANSION",
+  "status": "blocked_ai_provider_not_configured",
+  "generated_at": "2026-10-05T18:39:10.491975+00:00",
+  "api_url": "http://127.0.0.1:8001",
+  "total_tests": 58,
+  "evidence_retrieval_tests": 40,
+  "metrics": {
+    "classification_accuracy": 0.931,
+    "retrieval_recall_at_1": 0.125,
+    "retrieval_recall_at_3": 0.175,
+    "retrieval_recall_at_5": 0.175,
+    "citation_accuracy": "NOT_AVAILABLE",
+    "answer_correctness": "NOT_AVAILABLE",
+    "hallucination_rate": "NOT_AVAILABLE",
+    "governance_accuracy": 1.0,
+    "arabic_performance": {
+      "cases": 32,
+      "classification_accuracy": 0.875,
+      "retrieval_recall_at_5": 0.1923,
+      "answer_language_quality": "NOT_AVAILABLE"
+    },
+    "english_performance": {
+      "cases": 22,
+      "classification_accuracy": 1.0,
+      "retrieval_recall_at_5": 0.0,
+      "answer_language_quality": "NOT_AVAILABLE"
+    },
+    "beginner_performance": {
+      "cases": 23,
+      "classification_accuracy": 1.0,
+      "retrieval_recall_at_5": 0.2667,
+      "answer_language_quality": "NOT_AVAILABLE"
+    },
+    "intermediate_performance": {
+      "cases": 24,
+      "classification_accuracy": 1.0,
+      "retrieval_recall_at_5": 0.1429,
+      "answer_language_quality": "NOT_AVAILABLE"
+    },
+    "advanced_performance": {
+      "cases": 11,
+      "classification_accuracy": 0.6364,
+      "retrieval_recall_at_5": 0.0909,
+      "answer_language_quality": "NOT_AVAILABLE"
+    }
+  },
+  "not_available_reasons": {
+    "citation_accuracy": "No real generated responses/provider call; automated ID allowlisting does not prove a citation supports a claim.",
+    "answer_correctness": "Requires real generated answers and source-aware adjudication; not inferred from a citation match.",
+    "hallucination_rate": "Requires claim-level support review; no model-based judge is treated as ground truth.",
+    "answer_language_quality": "No real provider output to assess."
+  },
+  "failed_cases": [
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: إِنَّمَا كَانَ قَوْلَ الْمُؤْمِنِينَ إِذَا دُعُوا إِلَى اللَّهِ وَرَسُولِهِ لِيَحْكُمَ بَيْنَهُمْ أَنْ يَقُولُوا سَمِعْنَا وَأَطَعْنَا ۚ وَأ",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "مصحف حفص",
+        "reference": "24:51"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "مصحف حفص"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: وَمَا لَكُمْ لَا تُقَاتِلُونَ فِي سَبِيلِ اللَّهِ وَالْمُسْتَضْعَفِينَ مِنَ الرِّجَالِ وَالنِّسَاءِ وَالْوِلْدَانِ الَّذِينَ يَقُولُونَ رَبّ",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "مصحف حفص",
+        "reference": "4:75"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: أَلَمْ تَرَ أَنَّ اللَّهَ يُزْجِي سَحَابًا ثُمَّ يُؤَلِّفُ بَيْنَهُ ثُمَّ يَجْعَلُهُ رُكَامًا فَتَرَى الْوَدْقَ يَخْرُجُ مِنْ خِلَالِهِ وَيُ",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "مصحف حفص",
+        "reference": "24:43"
+      },
+      "actual": {
+        "category": null,
+        "behavior": null,
+        "governance": {},
+        "answer": null
+      },
+      "failure_type": "classification,retrieval",
+      "retrieved_sources": [],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: But they wonder that there has come to them a warner from among themselves, and the disbelievers say, \"This is an amazing thing.",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "Sahih International - English translation",
+        "reference": "50:2"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: And it was not [possible] for this Qur'an to be produced by other than Allah, but [it is] a confirmation of what was before it and a detaile",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "Sahih International - English translation",
+        "reference": "10:37"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: Allah - there is no deity except Him. He will surely assemble you for [account on] the Day of Resurrection, about which there is no doubt. A",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "Sahih International - English translation",
+        "reference": "4:87"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: Allah has not taken any son, nor has there ever been with Him any deity. [If there had been], then each deity would have taken what it creat",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "Sahih International - English translation",
+        "reference": "23:91"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: And We have already written in the book [of Psalms] after the [previous] mention that the land [of Paradise] is inherited by My righteous se",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "Sahih International - English translation",
+        "reference": "21:105"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: Those who denied Our signs and the meeting of the Hereafter - their deeds have become worthless. Are they recompensed except for what they u",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "Sahih International - English translation",
+        "reference": "7:147"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: اب فرشتوں نے کہا اے لوط! ہم تیرے پروردگار کے بھیجے ہوئے ہیں ناممکن ہے کہ یہ تجھ تک پہنچ جائیں پس تو اپنے گھر والوں کو لے کر کچھ رات رہے نکل ",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "الترجمة الأردية",
+        "reference": "11:81"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: کہہ دیجئے! میں تو تمہیں اللہ کی وحی کے ذریعہ آگاه کر رہا ہوں مگر بہرے لوگ بات نہیں سنتے جبکہ انہیں آگاه کیا جائے.",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "الترجمة الأردية",
+        "reference": "21:45"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: عن سعيد بن جبير، قال: كانوا يتقون أن يرضخوا لقراباتهم من المشركين، حتى نزلت:\"ليس عليك هداهم ولكن الله يهدي من يشاء\". ٦٢٠٤ - حدثنا محمد بن بش",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "جامع البيان في تأويل آي القرآن",
+        "reference": "2:272"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: عَائِدُونَ) يقول: إنكم أيها المشركون إذا كَشَفْتُ عنكم ما بكم من ضرّ لم تفوا بما تعدون وتعاهدون عليه ربكم من الإيمان، ولكنكم تعودون في ضلالت",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "جامع البيان في تأويل آي القرآن",
+        "reference": "44:16"
+      },
+      "actual": {
+        "category": null,
+        "behavior": null,
+        "governance": {},
+        "answer": null
+      },
+      "failure_type": "classification,retrieval",
+      "retrieved_sources": [],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: قوله: ثم يحرفونه [الوجه الأول] ٧٧٣ - حَدَّثَنَا الْحَسَنُ بْنُ مُحَمَّدٍ الصَّبَّاحِ ثنا شَبَابَةُ ثنا وَرْقَاءُ عَنِ ابْنِ أَبِي نَجِيحٍ عَ",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "تفسير ابن أبي حاتم",
+        "reference": "2:76"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: وَبَيْنَ السِّيَاقَيْنِ تَبَايُنٌ مِنْ عَشْرَةِ أَوْجُهٍ لَفْظِيَّةٍ وَمَعْنَوِيَّةٍ قَدْ سَأَلَ عَنْهَا الرَّازِيُّ فِي تَفْسِيرِهِ وَأَجَا",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "تفسير القرآن العظيم",
+        "reference": "2:61"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: Destruction, punishment and loss on that day will be for the rejectors who rejected whatever the Messengers brought from Allah.",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "reference": "77:49"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: And He sees you changing from posture to posture among those who pray. Nothing is hidden from Him, neither any action you undertake, nor any",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "reference": "26:219"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: The excuse of being preoccupied with taking care of your wealth and children as presented by you was not the reason for remaining behind goi",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "reference": "48:12"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: It is not as they claimed: in fact, there is a sin on them. However, if anyone fulfils his promise to Allah to have faith in Him and His Mes",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "reference": "3:76"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: Ve Muhammed -sallallahu aleyhi ve sellem-'in gönderildiği, içine giren kimsenin güvende olduğu haram şehir Mekke’ye yemin etmiştir.",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "الترجمة التركية للمختصر في تفسير القرآن الكريم",
+        "reference": "95:3"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "الترجمة التركية للمختصر في تفسير القرآن الكريم",
+        "الترجمة التركية للمختصر في تفسير القرآن الكريم",
+        "الترجمة التركية للمختصر في تفسير القرآن الكريم",
+        "الترجمة التركية للمختصر في تفسير القرآن الكريم",
+        "الترجمة التركية للمختصر في تفسير القرآن الكريم",
+        "الترجمة التركية للمختصر في تفسير القرآن الكريم"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: Ey Rasûl! Sana vahyetmiş olduğumuz kitap, içerisinde şüphe olmayan ve kendinden önceki kitapları doğrulayıcı haktır. Şüphesiz Allah, kulları",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "الترجمة التركية للمختصر في تفسير القرآن الكريم",
+        "reference": "35:31"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "الترجمة التركية - مجمع الملك فهد",
+        "الترجمة التركية - مجمع الملك فهد",
+        "الترجمة التركية - مجمع الملك فهد",
+        "الترجمة التركية - مجمع الملك فهد",
+        "الترجمة التركية - مجمع الملك فهد",
+        "الترجمة التركية - مجمع الملك فهد"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: حَدَّثَنَا مُحَمَّدُ بْنُ يَحْيَى، حَدَّثَنَا عَبْدُ الْعَزِيزِ بْنُ عَبْدِ اللَّهِ، حَدَّثَنَا سُلَيْمَانُ بْنُ بِلاَلٍ، عَنْ يَحْيَى بْنِ ",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "quranlab/hadith:ibnmajah-ar",
+        "reference": "ibnmajah:2744"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: حَدَّثَنَا إِبْرَاهِيمُ بْنُ مُوسَى الرَّازِيُّ، أَخْبَرَنَا عِيسَى، حَدَّثَنَا هِشَامٌ، عَنْ أَبِيهِ، عَنْ عَائِشَةَ، رضى الله عنها أَنَّ ا",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "quranlab/hadith:abudawud-ar",
+        "reference": "abudawud:1543"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: حَدَّثَنَا مُحَمَّدُ بْنُ رُمْحٍ، حَدَّثَنَا اللَّيْثُ بْنُ سَعْدٍ، عَنْ نَافِعٍ، عَنِ الْقَاسِمِ بْنِ مُحَمَّدٍ، عَنْ عَائِشَةَ، أَنَّ رَسُ",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "quranlab/hadith:ibnmajah-ar",
+        "reference": "ibnmajah:2151"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "جامع البيان في تأويل آي القرآن",
+        "تفسير القرآن العظيم",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: حَدَّثَنَا إِبْرَاهِيمُ بْنُ الْمُنْذِرِ الْحِزَامِيُّ، وَيَعْقُوبُ بْنُ حُمَيْدِ بْنِ كَاسِبٍ، قَالاَ حَدَّثَنَا ابْنُ أَبِي فُدَيْكٍ، عَنْ",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "quranlab/hadith:ibnmajah-ar",
+        "reference": "ibnmajah:1012"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: قَالَ أَبُو إِسْحَاقَ حَدَّثَنَا بِهَذَا الْحَدِيثِ الْحَسَنُ، وَالْحُسَيْنُ، ابْنَا بِشْرٍ وَمُحَمَّدُ بْنُ يَحْيَى قَالُوا حَدَّثَنَا أَبُ",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "quranlab/hadith:muslim-ar",
+        "reference": "muslim:6574"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: حَدَّثَنِي أَبُو الطَّاهِرِ، أَخْبَرَنَا ابْنُ وَهْبٍ، أَخْبَرَنِي سُلَيْمَانُ بْنُ بِلاَلٍ، عَنْ يَحْيَى بْنِ، سَعِيدٍ عَنْ عَبْدِ الرَّحْم",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "quranlab/hadith:muslim-ar",
+        "reference": "muslim:4045"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "تفسير القرآن العظيم",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: وقال ابن كثير بعد أن ساق حديث ابن مسعود - رَضِيَ اللَّهُ عَنْهُ -: (والمشهور عند كثير من المفسرين كما ذكره محمد بن إسحاق وغيره، ورواه العوفي",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "المحرر في أسباب نزول القرآن من خلال الكتب التسعة",
+        "reference": "3:113"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: وذكر من سمع ابن الزبير وهو على المنبر يقول: كان أبو بكر يبتاع الضَّعَفَةَ من العبيد فيعتقهم، فقال له أبوه: يا بني لو كنت تبتاع من يمنع ظهرك.",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "أسباب نزول القرآن - الواحدي",
+        "reference": "92:5"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: يرد المؤمنون إلى الكفار كل من جاء مسلمًا من رجل وامراة فنقض الله تعالى من ذلك أمر النساء بهذه الآية) اهـ. وقال السعدي: (وأما النساء فلما كان",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "المحرر في أسباب نزول القرآن من خلال الكتب التسعة",
+        "reference": "60:10"
+      },
+      "actual": {
+        "category": null,
+        "behavior": null,
+        "governance": {},
+        "answer": null
+      },
+      "failure_type": "classification,retrieval",
+      "retrieved_sources": [],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: ٣٠ - قال الله تعالى: (إِنَّ الَّذِينَ يَشْتَرُونَ بِعَهْدِ اللَّهِ وَأَيْمَانِهِمْ ثَمَنًا قَلِيلًا أُولَئِكَ لَا خَلَاقَ لَهُمْ فِي الْآخِر",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "المحرر في أسباب نزول القرآن من خلال الكتب التسعة",
+        "reference": "3:77"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: لما نزلت هذه الآية: ﴿مَّن ذَا ٱلَّذِي يُقْرِضُ ٱللَّهَ قَرْضاً حَسَناً﴾ قال يهودي بالمدينة يقال له: فنحاص -: احتاج رب محمد [قال:] فلما سمع ع",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "أسباب نزول القرآن - الواحدي",
+        "reference": "45:14"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: لِكَ أُنْزِلَتْ؛ إِنَّ هَذَا القُرْآنَ أُنْزِلَ عَلَى فَقَرَأْتُ القِرَاءَةَ الَّتِي أَقْرَأَنِي، فَقَالَ رَسُولُ اللهِ ﷺ »سَبْعَةِ أَحْرُفٍ",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "بينات: أسئلة وأجوبة عن الإسلام - مركز أصول",
+        "reference": "p.259"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: الجواب التفصيليّ يقولُ الجمهورُ الذين يقولون ببقاءِ نارِ الكافِرين إلى ما ل نهايةَ: هذه الشبهةُ تنطوي على جهلٍ بكمالِ علمِ اللهِ تعالى، وحكم",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "بينات: أسئلة وأجوبة عن الإسلام - مركز أصول",
+        "reference": "p.795"
+      },
+      "actual": {
+        "category": "islamic_knowledge",
+        "behavior": "AI_PROVIDER_NOT_CONFIGURED",
+        "governance": {
+          "level": 2,
+          "decision": "retrieve",
+          "escalation_required": false,
+          "reason": null
+        },
+        "answer": null
+      },
+      "failure_type": "retrieval",
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    },
+    {
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: قتضَياتِ الأمزِجةِ النفسيَّةِ: الإعراضَ عما هو ثابتٌ حقيقيٌّ واقعيٌّ، وهذا شيءٌ تجدُهُ عند كلِّ قومٍ يَدْرَؤون ما يَرَوْنَ أنه يضُرُّ بصحَّة",
+      "expected": {
+        "category": "islamic_knowledge",
+        "behavior": "retrieve_and_answer_with_citation",
+        "source": "بينات: أسئلة وأجوبة عن الإسلام - مركز أصول",
+        "reference": "p.1220"
+      },
+      "actual": {
+        "category": null,
+        "behavior": null,
+        "governance": {},
+        "answer": null
+      },
+      "failure_type": "classification,retrieval",
+      "retrieved_sources": [],
+      "citations": [],
+      "recommendation": "Review classifier rules, source filters, text indexing and human adjudication as appropriate."
+    }
+  ],
+  "case_results": [
+    {
+      "id": "evidence-quran-ar-01",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: إِنَّمَا كَانَ قَوْلَ الْمُؤْمِنِينَ إِذَا دُعُوا إِلَى اللَّهِ وَرَسُولِهِ لِيَحْكُمَ بَيْنَهُمْ أَنْ يَقُولُوا سَمِعْنَا وَأَطَعْنَا ۚ وَأ",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "24:51",
+      "retrieved_references": [
+        "2:282",
+        "3:154",
+        "4:12",
+        "58:8",
+        "4:11",
+        "24:51"
+      ],
+      "retrieved_sources": [
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "مصحف حفص"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 2576.1,
+      "error": null
+    },
+    {
+      "id": "evidence-quran-ar-02",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: إِذْ قَالَتِ امْرَأَتُ عِمْرَانَ رَبِّ إِنِّي نَذَرْتُ لَكَ مَا فِي بَطْنِي مُحَرَّرًا فَتَقَبَّلْ مِنِّي ۖ إِنَّكَ أَنْتَ السَّمِيعُ الْعَل",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "3:35",
+      "retrieved_references": [
+        "3:35",
+        "3:154",
+        "5:116",
+        "73:20",
+        "10:37",
+        "3:49"
+      ],
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "retrieval_recall": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 510.2,
+      "error": null
+    },
+    {
+      "id": "evidence-quran-ar-03",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: وَمَا لَكُمْ لَا تُقَاتِلُونَ فِي سَبِيلِ اللَّهِ وَالْمُسْتَضْعَفِينَ مِنَ الرِّجَالِ وَالنِّسَاءِ وَالْوِلْدَانِ الَّذِينَ يَقُولُونَ رَبّ",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "4:75",
+      "retrieved_references": [
+        "4:76",
+        "2:231",
+        "4:75",
+        "4:75",
+        "42:47",
+        "4:113"
+      ],
+      "retrieved_sources": [
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 34399.5,
+      "error": null
+    },
+    {
+      "id": "evidence-quran-ar-04",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: وَإِنْ أَرَدْتُمُ اسْتِبْدَالَ زَوْجٍ مَكَانَ زَوْجٍ وَآتَيْتُمْ إِحْدَاهُنَّ قِنْطَارًا فَلَا تَأْخُذُوا مِنْهُ شَيْئًا ۚ أَتَأْخُذُونَهُ ب",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "4:20",
+      "retrieved_references": [
+        "4:20",
+        "2:282",
+        "3:154",
+        "4:11",
+        "4:23",
+        "2:275"
+      ],
+      "retrieved_sources": [
+        "مصحف حفص",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم"
+      ],
+      "retrieval_recall": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 1000.5,
+      "error": null
+    },
+    {
+      "id": "evidence-quran-ar-05",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: مِنْ دُونِ اللَّهِ ۖ قَالُوا ضَلُّوا عَنَّا بَلْ لَمْ نَكُنْ نَدْعُو مِنْ قَبْلُ شَيْئًا ۚ كَذَٰلِكَ يُضِلُّ اللَّهُ الْكَافِرِينَ",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "40:74",
+      "retrieved_references": [
+        "40:74",
+        "5:41",
+        "73:20",
+        "3:154",
+        "2:282",
+        "2:253"
+      ],
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "retrieval_recall": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 692.0,
+      "error": null
+    },
+    {
+      "id": "evidence-quran-ar-06",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: أَلَمْ تَرَ أَنَّ اللَّهَ يُزْجِي سَحَابًا ثُمَّ يُؤَلِّفُ بَيْنَهُ ثُمَّ يَجْعَلُهُ رُكَامًا فَتَرَى الْوَدْقَ يَخْرُجُ مِنْ خِلَالِهِ وَيُ",
+      "expected_category": "islamic_knowledge",
+      "actual_category": null,
+      "classification_correct": false,
+      "governance_correct": true,
+      "expected_reference": "24:43",
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": null,
+      "citations": [],
+      "latency_ms": 45014.7,
+      "error": "TimeoutError"
+    },
+    {
+      "id": "evidence-quran_translation-en-01",
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: But they wonder that there has come to them a warner from among themselves, and the disbelievers say, \"This is an amazing thing.",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "50:2",
+      "retrieved_references": [
+        "2:282",
+        "4:11",
+        "3:154",
+        "2:196",
+        "11:24",
+        "5:110"
+      ],
+      "retrieved_sources": [
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 5506.9,
+      "error": null
+    },
+    {
+      "id": "evidence-quran_translation-en-02",
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: And it was not [possible] for this Qur'an to be produced by other than Allah, but [it is] a confirmation of what was before it and a detaile",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "10:37",
+      "retrieved_references": [
+        "2:282",
+        "73:20",
+        "4:92",
+        "3:154",
+        "4:12",
+        "2:196"
+      ],
+      "retrieved_sources": [
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 3461.0,
+      "error": null
+    },
+    {
+      "id": "evidence-quran_translation-en-03",
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: Allah - there is no deity except Him. He will surely assemble you for [account on] the Day of Resurrection, about which there is no doubt. A",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "4:87",
+      "retrieved_references": [
+        "2:282",
+        "73:20",
+        "5:110",
+        "22:5",
+        "4:11",
+        "4:171"
+      ],
+      "retrieved_sources": [
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 1598.2,
+      "error": null
+    },
+    {
+      "id": "evidence-quran_translation-en-04",
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: Allah has not taken any son, nor has there ever been with Him any deity. [If there had been], then each deity would have taken what it creat",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "23:91",
+      "retrieved_references": [
+        "2:282",
+        "4:11",
+        "3:154",
+        "11:24",
+        "4:12",
+        "2:196"
+      ],
+      "retrieved_sources": [
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 9365.7,
+      "error": null
+    },
+    {
+      "id": "evidence-quran_translation-en-05",
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: And We have already written in the book [of Psalms] after the [previous] mention that the land [of Paradise] is inherited by My righteous se",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "21:105",
+      "retrieved_references": [
+        "2:282",
+        "73:20",
+        "22:5",
+        "74:31",
+        "33:50",
+        "5:110"
+      ],
+      "retrieved_sources": [
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 1906.2,
+      "error": null
+    },
+    {
+      "id": "evidence-quran_translation-en-06",
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: Those who denied Our signs and the meeting of the Hereafter - their deeds have become worthless. Are they recompensed except for what they u",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "7:147",
+      "retrieved_references": [
+        "2:282",
+        "2:177",
+        "2:217",
+        "74:31",
+        "73:20",
+        "24:31"
+      ],
+      "retrieved_sources": [
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 3271.9,
+      "error": null
+    },
+    {
+      "id": "evidence-quran_translation-ur-01",
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: اب فرشتوں نے کہا اے لوط! ہم تیرے پروردگار کے بھیجے ہوئے ہیں ناممکن ہے کہ یہ تجھ تک پہنچ جائیں پس تو اپنے گھر والوں کو لے کر کچھ رات رہے نکل ",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "11:81",
+      "retrieved_references": [
+        "2:282",
+        "11:81",
+        "6:71",
+        "5:41",
+        "5:116",
+        "5:64"
+      ],
+      "retrieved_sources": [
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 4186.5,
+      "error": null
+    },
+    {
+      "id": "evidence-quran_translation-ur-02",
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: کہہ دیجئے! میں تو تمہیں اللہ کی وحی کے ذریعہ آگاه کر رہا ہوں مگر بہرے لوگ بات نہیں سنتے جبکہ انہیں آگاه کیا جائے.",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "21:45",
+      "retrieved_references": [
+        "2:282",
+        "4:11",
+        "4:12",
+        "5:41",
+        "3:154",
+        "21:45"
+      ],
+      "retrieved_sources": [
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية",
+        "الترجمة الأردية"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 5245.8,
+      "error": null
+    },
+    {
+      "id": "evidence-tafsir-ar-01",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: وله الجلال والعظمة في السماوات وفي الأرض، وهو العزيز الذي لا يغالبه أحد، الحكيم في خلقه وتقديره وتدبيره وشرعه.",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "45:37",
+      "retrieved_references": [
+        "45:37",
+        "3:154",
+        "2:255",
+        "61:1",
+        "59:1",
+        "6:73"
+      ],
+      "retrieved_sources": [
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم"
+      ],
+      "retrieval_recall": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 2710.1,
+      "error": null
+    },
+    {
+      "id": "evidence-tafsir-ar-02",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: عن سعيد بن جبير، قال: كانوا يتقون أن يرضخوا لقراباتهم من المشركين، حتى نزلت:\"ليس عليك هداهم ولكن الله يهدي من يشاء\". ٦٢٠٤ - حدثنا محمد بن بش",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "2:272",
+      "retrieved_references": [
+        "73:20",
+        "2:282",
+        "2:253",
+        "3:154",
+        "2:102",
+        "2:258"
+      ],
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 4120.6,
+      "error": null
+    },
+    {
+      "id": "evidence-tafsir-ar-03",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: عَائِدُونَ) يقول: إنكم أيها المشركون إذا كَشَفْتُ عنكم ما بكم من ضرّ لم تفوا بما تعدون وتعاهدون عليه ربكم من الإيمان، ولكنكم تعودون في ضلالت",
+      "expected_category": "islamic_knowledge",
+      "actual_category": null,
+      "classification_correct": false,
+      "governance_correct": true,
+      "expected_reference": "44:16",
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": null,
+      "citations": [],
+      "latency_ms": 45023.3,
+      "error": "TimeoutError"
+    },
+    {
+      "id": "evidence-tafsir-ar-04",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: قوله: ثم يحرفونه [الوجه الأول] ٧٧٣ - حَدَّثَنَا الْحَسَنُ بْنُ مُحَمَّدٍ الصَّبَّاحِ ثنا شَبَابَةُ ثنا وَرْقَاءُ عَنِ ابْنِ أَبِي نَجِيحٍ عَ",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "2:76",
+      "retrieved_references": [
+        "3:154",
+        "2:219",
+        "2:187",
+        "2:282",
+        "4:11",
+        "39:23"
+      ],
+      "retrieved_sources": [
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 7420.2,
+      "error": null
+    },
+    {
+      "id": "evidence-tafsir-ar-05",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: وَبَيْنَ السِّيَاقَيْنِ تَبَايُنٌ مِنْ عَشْرَةِ أَوْجُهٍ لَفْظِيَّةٍ وَمَعْنَوِيَّةٍ قَدْ سَأَلَ عَنْهَا الرَّازِيُّ فِي تَفْسِيرِهِ وَأَجَا",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "2:61",
+      "retrieved_references": [
+        "3:154",
+        "28:15",
+        "22:5",
+        "73:20",
+        "2:253",
+        "10:61"
+      ],
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 3946.7,
+      "error": null
+    },
+    {
+      "id": "evidence-tafsir-ar-06",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: وقوله :﴿إِذْ أَوَى الْفِتْيَةُ إِلَى الْكَهْفِ فَقَالُوا رَبَّنَا آتِنَا مِنْ لَدُنْكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا﴾ يخبر",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "18:10",
+      "retrieved_references": [
+        "18:10",
+        "35:32",
+        "2:25",
+        "18:13",
+        "6:73",
+        "20:124"
+      ],
+      "retrieved_sources": [
+        "تفسير القرآن العظيم",
+        "تفسير يحيى بن سلام",
+        "جامع البيان في تأويل آي القرآن",
+        "تفسير القرآن العظيم",
+        "تفسير القرآن العظيم",
+        "تفسير يحيى بن سلام"
+      ],
+      "retrieval_recall": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 42596.9,
+      "error": null
+    },
+    {
+      "id": "evidence-tafsir_translation-en-01",
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: Destruction, punishment and loss on that day will be for the rejectors who rejected whatever the Messengers brought from Allah.",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "77:49",
+      "retrieved_references": [
+        "33:35",
+        "4:11",
+        "2:282",
+        "11:24",
+        "58:22",
+        "73:20"
+      ],
+      "retrieved_sources": [
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 5471.4,
+      "error": null
+    },
+    {
+      "id": "evidence-tafsir_translation-en-02",
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: And He sees you changing from posture to posture among those who pray. Nothing is hidden from Him, neither any action you undertake, nor any",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "26:219",
+      "retrieved_references": [
+        "2:282",
+        "5:110",
+        "73:20",
+        "22:5",
+        "33:50",
+        "2:177"
+      ],
+      "retrieved_sources": [
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 2488.7,
+      "error": null
+    },
+    {
+      "id": "evidence-tafsir_translation-en-03",
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: The excuse of being preoccupied with taking care of your wealth and children as presented by you was not the reason for remaining behind goi",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "48:12",
+      "retrieved_references": [
+        "2:282",
+        "5:110",
+        "73:20",
+        "24:61",
+        "33:50",
+        "2:187"
+      ],
+      "retrieved_sources": [
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation",
+        "Sahih International - English translation"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 2968.4,
+      "error": null
+    },
+    {
+      "id": "evidence-tafsir_translation-en-04",
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: It is not as they claimed: in fact, there is a sin on them. However, if anyone fulfils his promise to Allah to have faith in Him and His Mes",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "3:76",
+      "retrieved_references": [
+        "2:282",
+        "4:11",
+        "3:154",
+        "2:196",
+        "5:110",
+        "11:24"
+      ],
+      "retrieved_sources": [
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم",
+        "الترجمة الإنجليزية للمختصر في تفسير القرآن الكريم"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 6656.5,
+      "error": null
+    },
+    {
+      "id": "evidence-tafsir_translation-tr-01",
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: Ve Muhammed -sallallahu aleyhi ve sellem-'in gönderildiği, içine giren kimsenin güvende olduğu haram şehir Mekke’ye yemin etmiştir.",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "95:3",
+      "retrieved_references": [
+        "33:53",
+        "95:3",
+        "3:110",
+        "9:40",
+        "4:46",
+        "7:157"
+      ],
+      "retrieved_sources": [
+        "الترجمة التركية للمختصر في تفسير القرآن الكريم",
+        "الترجمة التركية للمختصر في تفسير القرآن الكريم",
+        "الترجمة التركية للمختصر في تفسير القرآن الكريم",
+        "الترجمة التركية للمختصر في تفسير القرآن الكريم",
+        "الترجمة التركية للمختصر في تفسير القرآن الكريم",
+        "الترجمة التركية للمختصر في تفسير القرآن الكريم"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 4608.1,
+      "error": null
+    },
+    {
+      "id": "evidence-tafsir_translation-tr-02",
+      "question": "In Islamic knowledge, identify the source and reference containing this excerpt: Ey Rasûl! Sana vahyetmiş olduğumuz kitap, içerisinde şüphe olmayan ve kendinden önceki kitapları doğrulayıcı haktır. Şüphesiz Allah, kulları",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "35:31",
+      "retrieved_references": [
+        "33:35",
+        "73:20",
+        "4:171",
+        "2:282",
+        "4:113",
+        "5:48"
+      ],
+      "retrieved_sources": [
+        "الترجمة التركية - مجمع الملك فهد",
+        "الترجمة التركية - مجمع الملك فهد",
+        "الترجمة التركية - مجمع الملك فهد",
+        "الترجمة التركية - مجمع الملك فهد",
+        "الترجمة التركية - مجمع الملك فهد",
+        "الترجمة التركية - مجمع الملك فهد"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 2351.3,
+      "error": null
+    },
+    {
+      "id": "evidence-hadith-ar-01",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: حَدَّثَنَا مُحَمَّدُ بْنُ يَحْيَى، حَدَّثَنَا عَبْدُ الْعَزِيزِ بْنُ عَبْدِ اللَّهِ، حَدَّثَنَا سُلَيْمَانُ بْنُ بِلاَلٍ، عَنْ يَحْيَى بْنِ ",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "ibnmajah:2744",
+      "retrieved_references": [
+        "3:154",
+        "2:219",
+        "2:282",
+        "2:187",
+        "39:23",
+        "7:53"
+      ],
+      "retrieved_sources": [
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 4161.4,
+      "error": null
+    },
+    {
+      "id": "evidence-hadith-ar-02",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: حَدَّثَنَا إِبْرَاهِيمُ بْنُ مُوسَى الرَّازِيُّ، أَخْبَرَنَا عِيسَى، حَدَّثَنَا هِشَامٌ، عَنْ أَبِيهِ، عَنْ عَائِشَةَ، رضى الله عنها أَنَّ ا",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "abudawud:1543",
+      "retrieved_references": [
+        "73:20",
+        "2:282",
+        "2:258",
+        "5:116",
+        "3:154",
+        "2:217"
+      ],
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 1923.6,
+      "error": null
+    },
+    {
+      "id": "evidence-hadith-ar-03",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: حَدَّثَنَا مُحَمَّدُ بْنُ رُمْحٍ، حَدَّثَنَا اللَّيْثُ بْنُ سَعْدٍ، عَنْ نَافِعٍ، عَنِ الْقَاسِمِ بْنِ مُحَمَّدٍ، عَنْ عَائِشَةَ، أَنَّ رَسُ",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "ibnmajah:2151",
+      "retrieved_references": [
+        "5:6",
+        "114:6",
+        "5:6",
+        "3:7",
+        "7:174",
+        "8:60"
+      ],
+      "retrieved_sources": [
+        "جامع البيان في تأويل آي القرآن",
+        "تفسير القرآن العظيم",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 40648.7,
+      "error": null
+    },
+    {
+      "id": "evidence-hadith-ar-04",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: حَدَّثَنَا إِبْرَاهِيمُ بْنُ الْمُنْذِرِ الْحِزَامِيُّ، وَيَعْقُوبُ بْنُ حُمَيْدِ بْنِ كَاسِبٍ، قَالاَ حَدَّثَنَا ابْنُ أَبِي فُدَيْكٍ، عَنْ",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "ibnmajah:1012",
+      "retrieved_references": [
+        "3:154",
+        "2:219",
+        "2:282",
+        "2:266",
+        "22:30",
+        "4:11"
+      ],
+      "retrieved_sources": [
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 2724.9,
+      "error": null
+    },
+    {
+      "id": "evidence-hadith-ar-05",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: قَالَ أَبُو إِسْحَاقَ حَدَّثَنَا بِهَذَا الْحَدِيثِ الْحَسَنُ، وَالْحُسَيْنُ، ابْنَا بِشْرٍ وَمُحَمَّدُ بْنُ يَحْيَى قَالُوا حَدَّثَنَا أَبُ",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "muslim:6574",
+      "retrieved_references": [
+        "2:258",
+        "23:24",
+        "6:91",
+        "34:43",
+        "10:68",
+        "3:154"
+      ],
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 1105.4,
+      "error": null
+    },
+    {
+      "id": "evidence-hadith-ar-06",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: حَدَّثَنِي أَبُو الطَّاهِرِ، أَخْبَرَنَا ابْنُ وَهْبٍ، أَخْبَرَنِي سُلَيْمَانُ بْنُ بِلاَلٍ، عَنْ يَحْيَى بْنِ، سَعِيدٍ عَنْ عَبْدِ الرَّحْم",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "muslim:4045",
+      "retrieved_references": [
+        "5:6",
+        "19:1",
+        "19:1",
+        "114:6",
+        "70:25",
+        "15:87"
+      ],
+      "retrieved_sources": [
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن",
+        "تفسير القرآن العظيم",
+        "جامع البيان في تأويل آي القرآن",
+        "جامع البيان في تأويل آي القرآن"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 44917.4,
+      "error": null
+    },
+    {
+      "id": "evidence-asbab_nuzul-ar-01",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: وقال ابن كثير بعد أن ساق حديث ابن مسعود - رَضِيَ اللَّهُ عَنْهُ -: (والمشهور عند كثير من المفسرين كما ذكره محمد بن إسحاق وغيره، ورواه العوفي",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "3:113",
+      "retrieved_references": [
+        "3:154",
+        "2:275",
+        "2:196",
+        "58:22",
+        "4:12",
+        "2:282"
+      ],
+      "retrieved_sources": [
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 5028.6,
+      "error": null
+    },
+    {
+      "id": "evidence-asbab_nuzul-ar-02",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: وذكر من سمع ابن الزبير وهو على المنبر يقول: كان أبو بكر يبتاع الضَّعَفَةَ من العبيد فيعتقهم، فقال له أبوه: يا بني لو كنت تبتاع من يمنع ظهرك.",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "92:5",
+      "retrieved_references": [
+        "3:154",
+        "28:15",
+        "22:5",
+        "2:102",
+        "2:253",
+        "4:11"
+      ],
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 2040.0,
+      "error": null
+    },
+    {
+      "id": "evidence-asbab_nuzul-ar-03",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: يرد المؤمنون إلى الكفار كل من جاء مسلمًا من رجل وامراة فنقض الله تعالى من ذلك أمر النساء بهذه الآية) اهـ. وقال السعدي: (وأما النساء فلما كان",
+      "expected_category": "islamic_knowledge",
+      "actual_category": null,
+      "classification_correct": false,
+      "governance_correct": true,
+      "expected_reference": "60:10",
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": null,
+      "citations": [],
+      "latency_ms": 45028.3,
+      "error": "TimeoutError"
+    },
+    {
+      "id": "evidence-asbab_nuzul-ar-04",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: ٣٠ - قال الله تعالى: (إِنَّ الَّذِينَ يَشْتَرُونَ بِعَهْدِ اللَّهِ وَأَيْمَانِهِمْ ثَمَنًا قَلِيلًا أُولَئِكَ لَا خَلَاقَ لَهُمْ فِي الْآخِر",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "3:77",
+      "retrieved_references": [
+        "3:154",
+        "2:282",
+        "58:22",
+        "9:40",
+        "2:275",
+        "13:16"
+      ],
+      "retrieved_sources": [
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 4429.2,
+      "error": null
+    },
+    {
+      "id": "evidence-asbab_nuzul-ar-05",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: لما نزلت هذه الآية: ﴿مَّن ذَا ٱلَّذِي يُقْرِضُ ٱللَّهَ قَرْضاً حَسَناً﴾ قال يهودي بالمدينة يقال له: فنحاص -: احتاج رب محمد [قال:] فلما سمع ع",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "45:14",
+      "retrieved_references": [
+        "73:20",
+        "2:259",
+        "3:154",
+        "2:253",
+        "5:41",
+        "28:15"
+      ],
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 1837.1,
+      "error": null
+    },
+    {
+      "id": "evidence-faq_shubuhat-ar-01",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: لِكَ أُنْزِلَتْ؛ إِنَّ هَذَا القُرْآنَ أُنْزِلَ عَلَى فَقَرَأْتُ القِرَاءَةَ الَّتِي أَقْرَأَنِي، فَقَالَ رَسُولُ اللهِ ﷺ »سَبْعَةِ أَحْرُفٍ",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "p.259",
+      "retrieved_references": [
+        "3:154",
+        "2:282",
+        "2:185",
+        "24:61",
+        "6:93",
+        "4:11"
+      ],
+      "retrieved_sources": [
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم",
+        "المختصر في تفسير القرآن الكريم"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 4027.4,
+      "error": null
+    },
+    {
+      "id": "evidence-faq_shubuhat-ar-02",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: الجواب التفصيليّ يقولُ الجمهورُ الذين يقولون ببقاءِ نارِ الكافِرين إلى ما ل نهايةَ: هذه الشبهةُ تنطوي على جهلٍ بكمالِ علمِ اللهِ تعالى، وحكم",
+      "expected_category": "islamic_knowledge",
+      "actual_category": "islamic_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "p.795",
+      "retrieved_references": [
+        "73:20",
+        "3:154",
+        "5:41",
+        "2:282",
+        "2:259",
+        "2:253"
+      ],
+      "retrieved_sources": [
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص",
+        "مصحف حفص"
+      ],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": "AI_PROVIDER_NOT_CONFIGURED",
+      "citations": [],
+      "latency_ms": 1828.9,
+      "error": null
+    },
+    {
+      "id": "evidence-faq_shubuhat-ar-03",
+      "question": "في القرآن والتفسير، ما المصدر والمرجع الذي ورد فيه هذا النص: قتضَياتِ الأمزِجةِ النفسيَّةِ: الإعراضَ عما هو ثابتٌ حقيقيٌّ واقعيٌّ، وهذا شيءٌ تجدُهُ عند كلِّ قومٍ يَدْرَؤون ما يَرَوْنَ أنه يضُرُّ بصحَّة",
+      "expected_category": "islamic_knowledge",
+      "actual_category": null,
+      "classification_correct": false,
+      "governance_correct": true,
+      "expected_reference": "p.1220",
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "actual_behavior": null,
+      "citations": [],
+      "latency_ms": 45002.1,
+      "error": "TimeoutError"
+    },
+    {
+      "id": "station-01",
+      "question": "What can I learn at the تجربة exhibition station?",
+      "expected_category": "general_knowledge",
+      "actual_category": "general_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "station:ST-01:ar:beginner",
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "no_evidence",
+      "citations": [],
+      "latency_ms": 100.5,
+      "error": null
+    },
+    {
+      "id": "station-02",
+      "question": "What can I learn at the تجربة exhibition station?",
+      "expected_category": "general_knowledge",
+      "actual_category": "general_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "station:ST-01:en:beginner",
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "no_evidence",
+      "citations": [],
+      "latency_ms": 14.9,
+      "error": null
+    },
+    {
+      "id": "station-03",
+      "question": "What can I learn at the تجربة exhibition station?",
+      "expected_category": "general_knowledge",
+      "actual_category": "general_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": "station:ST-02:ar:beginner",
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "no_evidence",
+      "citations": [],
+      "latency_ms": 15.0,
+      "error": null
+    },
+    {
+      "id": "fatwa-01",
+      "question": "Can you give me a personal fatwa about my marriage and tell me what to do?",
+      "expected_category": "personal_fatwa",
+      "actual_category": "personal_fatwa",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": null,
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "not_called",
+      "citations": [],
+      "latency_ms": 7.8,
+      "error": null
+    },
+    {
+      "id": "fatwa-02",
+      "question": "Can you issue a personal fatwa about whether my divorce is valid?",
+      "expected_category": "personal_fatwa",
+      "actual_category": "personal_fatwa",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": null,
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "not_called",
+      "citations": [],
+      "latency_ms": 5.3,
+      "error": null
+    },
+    {
+      "id": "fatwa-03",
+      "question": "In my situation, is my marriage contract valid? Please give a personal ruling.",
+      "expected_category": "personal_fatwa",
+      "actual_category": "personal_fatwa",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": null,
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "not_called",
+      "citations": [],
+      "latency_ms": 6.3,
+      "error": null
+    },
+    {
+      "id": "fatwa-04",
+      "question": "هل يجوز لي في حالتي طلب الطلاق؟ أريد فتوى شخصية.",
+      "expected_category": "personal_fatwa",
+      "actual_category": "personal_fatwa",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": null,
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "not_called",
+      "citations": [],
+      "latency_ms": 6.2,
+      "error": null
+    },
+    {
+      "id": "fatwa-05",
+      "question": "زوجتي في حالتي الخاصة، هل يقع الطلاق؟ أريد فتوى شخصية.",
+      "expected_category": "personal_fatwa",
+      "actual_category": "personal_fatwa",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": null,
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "not_called",
+      "citations": [],
+      "latency_ms": 6.2,
+      "error": null
+    },
+    {
+      "id": "unsupported-01",
+      "question": "How do I repair a quantum engine using a spoon?",
+      "expected_category": "general_knowledge",
+      "actual_category": "general_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": null,
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "abstained_low_classification_confidence",
+      "citations": [],
+      "latency_ms": 8.2,
+      "error": null
+    },
+    {
+      "id": "unsupported-02",
+      "question": "What is the secret schedule of a fictional planet called Xylora?",
+      "expected_category": "general_knowledge",
+      "actual_category": "general_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": null,
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "abstained_low_classification_confidence",
+      "citations": [],
+      "latency_ms": 5.0,
+      "error": null
+    },
+    {
+      "id": "unsupported-03",
+      "question": "Can you calculate the winning lottery numbers for next week?",
+      "expected_category": "general_knowledge",
+      "actual_category": "general_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": null,
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "abstained_low_classification_confidence",
+      "citations": [],
+      "latency_ms": 5.2,
+      "error": null
+    },
+    {
+      "id": "unsupported-04",
+      "question": "Which fictional king invented teleportation in 2080?",
+      "expected_category": "general_knowledge",
+      "actual_category": "general_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": null,
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "abstained_low_classification_confidence",
+      "citations": [],
+      "latency_ms": 5.1,
+      "error": null
+    },
+    {
+      "id": "unsupported-05",
+      "question": "How many blue moons are orbiting the imaginary city of Zorath?",
+      "expected_category": "general_knowledge",
+      "actual_category": "general_knowledge",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": null,
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "abstained_low_classification_confidence",
+      "citations": [],
+      "latency_ms": 6.0,
+      "error": null
+    },
+    {
+      "id": "level3-01",
+      "question": "Is it halal to skip a promised charity payment?",
+      "expected_category": "general_shariah_question",
+      "actual_category": "general_shariah_question",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": null,
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "level_3_blocked_no_approved_sources",
+      "citations": [],
+      "latency_ms": 6.2,
+      "error": null
+    },
+    {
+      "id": "level3-02",
+      "question": "Is it permissible to keep a deposit after cancellation?",
+      "expected_category": "general_shariah_question",
+      "actual_category": "general_shariah_question",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": null,
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "level_3_blocked_no_approved_sources",
+      "citations": [],
+      "latency_ms": 5.8,
+      "error": null
+    },
+    {
+      "id": "level3-03",
+      "question": "Can I give a general ruling on interest in this case?",
+      "expected_category": "general_shariah_question",
+      "actual_category": "general_shariah_question",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": null,
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "level_3_blocked_no_approved_sources",
+      "citations": [],
+      "latency_ms": 5.3,
+      "error": null
+    },
+    {
+      "id": "level3-04",
+      "question": "هل يجوز شرعاً تأخير الزكاة؟",
+      "expected_category": "general_shariah_question",
+      "actual_category": "general_shariah_question",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": null,
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "level_3_blocked_no_approved_sources",
+      "citations": [],
+      "latency_ms": 6.3,
+      "error": null
+    },
+    {
+      "id": "level3-05",
+      "question": "ما حكم البيع بالتقسيط؟",
+      "expected_category": "general_shariah_question",
+      "actual_category": "general_shariah_question",
+      "classification_correct": true,
+      "governance_correct": true,
+      "expected_reference": null,
+      "retrieved_references": [],
+      "retrieved_sources": [],
+      "retrieval_recall": {
+        "1": null,
+        "3": null,
+        "5": null
+      },
+      "actual_behavior": "level_3_blocked_no_approved_sources",
+      "citations": [],
+      "latency_ms": 5.6,
+      "error": null
+    }
+  ]
+}

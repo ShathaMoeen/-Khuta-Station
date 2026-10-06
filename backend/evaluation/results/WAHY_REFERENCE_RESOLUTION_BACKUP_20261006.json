@@ -1,0 +1,177 @@
+{
+  "snapshot_time_utc": "2026-10-06",
+  "scope": "WAHY-01 content/provenance rows referencing Sahih Muslim 160 or local muslim:403; corresponding muslim:160 and station_passages rows",
+  "counts": {
+    "public.passages": 166774,
+    "app.embeddings": 13,
+    "app.stations": 14,
+    "app.station_passages": 58,
+    "app.station_content": 75,
+    "app.station_content_provenance": 280
+  },
+  "content_rows": [
+    {
+      "content": {
+        "id": 16,
+        "body": "تروي عائشة رضي الله عنها في صحيح البخاري أن النبي ﷺ كان يخلو في غار حراء للعبادة، حتى جاءه المَلَك وقال له: «اقرأ». وارتبط هذا الحدث بنزول بداية سورة العلق. وتُعد الرواية من المصادر الموثقة لخبر بدء الوحي.",
+        "lang": "ar",
+        "level": "intermediate",
+        "title": "بداية الوحي",
+        "station_id": 10,
+        "source_note": "Controlled KHUTA demo text; local references linked where available; rights status remains under review."
+      }
+    },
+    {
+      "content": {
+        "id": 17,
+        "body": "يروي حديث عائشة رضي الله عنها تفاصيل بدء الوحي، من الرؤيا الصالحة وخلوة النبي ﷺ في غار حراء إلى مجيء المَلَك ونزول بداية سورة العلق. ورد أصل الرواية في صحيح البخاري رقم 3، كما رواها مسلم في صحيحه رقم 160. وتعرض الرواية والآيات مع مراجع كل منهما.",
+        "lang": "ar",
+        "level": "advanced",
+        "title": "بداية الوحي",
+        "station_id": 10,
+        "source_note": "Controlled KHUTA demo text; local references linked where available; rights status remains under review."
+      }
+    },
+    {
+      "content": {
+        "id": 19,
+        "body": "Aisha, may God be pleased with her, narrates in Sahih al-Bukhari that the Prophet ﷺ would retreat to the Cave of Hira for worship, until the angel came to him and said, “Read.” This event was connected with the revelation of the beginning of Surat Al-‘Alaq. The narration is a documented source for the account of the beginning of revelation.",
+        "lang": "en",
+        "level": "intermediate",
+        "title": "Beginning of Revelation",
+        "station_id": 10,
+        "source_note": "Controlled KHUTA demo text; local references linked where available; rights status remains under review."
+      }
+    },
+    {
+      "content": {
+        "id": 20,
+        "body": "The narration of Aisha, may God be pleased with her, recounts details of the beginning of revelation, from the true visions and the Prophet’s ﷺ retreat in the Cave of Hira to the angel’s arrival and the revelation of the beginning of Surat Al-‘Alaq. The narration is recorded in Sahih al-Bukhari 3 and was also narrated by Muslim in his Sahih, number 160. The narration and verses are presented with their respective references.",
+        "lang": "en",
+        "level": "advanced",
+        "title": "Beginning of Revelation",
+        "station_id": 10,
+        "source_note": "Controlled KHUTA demo text; local references linked where available; rights status remains under review."
+      }
+    }
+  ],
+  "provenance_rows": [
+    {
+      "provenance": {
+        "id": 616,
+        "notes": "Reference matched to one existing local passage. Source rights and attribution remain under review; no governance approval is implied.",
+        "reference": "Sahih Muslim 160",
+        "source_id": 5,
+        "created_at": "2026-10-05T19:15:40.344399+00:00",
+        "passage_id": "76f07fd73b4ef74f6b74b05d59a32433dc093ac3",
+        "source_url": "https://huggingface.co/datasets/quranlab/hadith",
+        "retrieved_at": null,
+        "rights_status": "needs_review",
+        "station_content_id": 16,
+        "verification_status": "reviewed"
+      }
+    },
+    {
+      "provenance": {
+        "id": 623,
+        "notes": "Reference matched to one existing local passage. Source rights and attribution remain under review; no governance approval is implied.",
+        "reference": "Sahih Muslim 160",
+        "source_id": 5,
+        "created_at": "2026-10-05T19:15:40.344399+00:00",
+        "passage_id": "76f07fd73b4ef74f6b74b05d59a32433dc093ac3",
+        "source_url": "https://huggingface.co/datasets/quranlab/hadith",
+        "retrieved_at": null,
+        "rights_status": "needs_review",
+        "station_content_id": 17,
+        "verification_status": "reviewed"
+      }
+    },
+    {
+      "provenance": {
+        "id": 636,
+        "notes": "Reference matched to one existing local passage. Source rights and attribution remain under review; no governance approval is implied.",
+        "reference": "Sahih Muslim 160",
+        "source_id": 5,
+        "created_at": "2026-10-05T19:15:40.344399+00:00",
+        "passage_id": "76f07fd73b4ef74f6b74b05d59a32433dc093ac3",
+        "source_url": "https://huggingface.co/datasets/quranlab/hadith",
+        "retrieved_at": null,
+        "rights_status": "needs_review",
+        "station_content_id": 19,
+        "verification_status": "reviewed"
+      }
+    },
+    {
+      "provenance": {
+        "id": 643,
+        "notes": "Reference matched to one existing local passage. Source rights and attribution remain under review; no governance approval is implied.",
+        "reference": "Sahih Muslim 160",
+        "source_id": 5,
+        "created_at": "2026-10-05T19:15:40.344399+00:00",
+        "passage_id": "76f07fd73b4ef74f6b74b05d59a32433dc093ac3",
+        "source_url": "https://huggingface.co/datasets/quranlab/hadith",
+        "retrieved_at": null,
+        "rights_status": "needs_review",
+        "station_content_id": 20,
+        "verification_status": "reviewed"
+      }
+    }
+  ],
+  "passages": [
+    {
+      "passage": {
+        "id": "f83f33a089079492ab937f335b382b2d144cf2cf",
+        "url": "https://huggingface.co/datasets/quranlab/hadith",
+        "ayah": null,
+        "lang": "ar",
+        "meta": {
+          "graded": false,
+          "sahihayn": true,
+          "authenticity_ar": "صحيح",
+          "authenticity_basis": "الصحيحان"
+        },
+        "text": "حَدَّثَنَا قُتَيْبَةُ بْنُ سَعِيدٍ، حَدَّثَنَا لَيْثٌ، ح وَحَدَّثَنَا مُحَمَّدُ بْنُ رُمْحِ بْنِ الْمُهَاجِرِ، أَخْبَرَنَا اللَّيْثُ، عَنْ يَزِيدَ بْنِ أَبِي حَبِيبٍ، عَنْ أَبِي الْخَيْرِ، عَنْ عَبْدِ اللَّهِ بْنِ عَمْرٍو، أَنَّ رَجُلاً، سَأَلَ رَسُولَ اللَّهِ صلى الله عليه وسلم أَىُّ الإِسْلاَمِ خَيْرٌ قَالَ ‏ \"‏ تُطْعِمُ الطَّعَامَ وَتَقْرَأُ السَّلاَمَ عَلَى مَنْ عَرَفْتَ وَمَنْ لَمْ تَعْرِفْ ‏\"‏ ‏.‏",
+        "type": "hadith",
+        "grade": "من الصحيحين",
+        "level": "intermediate",
+        "surah": null,
+        "source": "quranlab/hadith:muslim-ar",
+        "char_len": 406,
+        "reference": "muslim:160",
+        "text_norm": "حدثنا قتيبه بن سعيد، حدثنا ليث، ح وحدثنا محمد بن رمح بن المهاجر، اخبرنا الليث، عن يزيد بن ابي حبيب، عن ابي الخير، عن عبد الله بن عمرو، ان رجلا، سال رسول الله صلي الله عليه وسلم اي الاسلام خير قال ‏ \"‏ تطعم الطعام وتقرا السلام علي من عرفت ومن لم تعرف ‏\"‏ ‏.‏",
+        "attribution": null,
+        "authenticity": "sahih",
+        "translation_of_type": null,
+        "translation_of_book_id": null
+      }
+    },
+    {
+      "passage": {
+        "id": "76f07fd73b4ef74f6b74b05d59a32433dc093ac3",
+        "url": "https://huggingface.co/datasets/quranlab/hadith",
+        "ayah": null,
+        "lang": "ar",
+        "meta": {
+          "graded": false,
+          "sahihayn": true,
+          "authenticity_ar": "صحيح",
+          "authenticity_basis": "الصحيحان"
+        },
+        "text": "حَدَّثَنِي أَبُو الطَّاهِرِ، أَحْمَدُ بْنُ عَمْرِو بْنِ عَبْدِ اللَّهِ بْنِ عَمْرِو بْنِ سَرْحٍ أَخْبَرَنَا ابْنُ وَهْبٍ، قَالَ أَخْبَرَنِي يُونُسُ، عَنِ ابْنِ شِهَابٍ، قَالَ حَدَّثَنِي عُرْوَةُ بْنُ الزُّبَيْرِ، أَنَّ عَائِشَةَ، زَوْجَ النَّبِيِّ صلى الله عليه وسلم أَخْبَرَتْهُ أَنَّهَا قَالَتْ كَانَ أَوَّلُ مَا بُدِئَ بِهِ رَسُولُ اللَّهِ صلى الله عليه وسلم مِنَ الْوَحْىِ الرُّؤْيَا الصَّادِقَةَ فِي النَّوْمِ فَكَانَ لاَ يَرَى رُؤْيَا إِلاَّ جَاءَتْ مِثْلَ فَلَقِ الصُّبْحِ ثُمَّ حُبِّبَ إِلَيْهِ الْخَلاَءُ فَكَانَ يَخْلُو بِغَارِ حِرَاءٍ يَتَحَنَّثُ فِيهِ - وَهُوَ التَّعَبُّدُ - اللَّيَالِيَ أُولاَتِ الْعَدَدِ قَبْلَ أَنْ يَرْجِعَ إِلَى أَهْلِهِ وَيَتَزَوَّدُ لِذَلِكَ ثُمَّ يَرْجِعُ إِلَى خَدِيجَةَ فَيَتَزَوَّدُ لِمِثْلِهَا حَتَّى فَجِئَهُ الْحَقُّ وَهُوَ فِي غَارِ حِرَاءٍ فَجَاءَهُ الْمَلَكُ فَقَالَ اقْرَأْ ‏.‏ قَالَ ‏\"‏ مَا أَنَا بِقَارِئٍ - قَالَ - فَأَخَذَنِي فَغَطَّنِي حَتَّى بَلَغَ مِنِّي الْجَهْدَ ثُمَّ أَرْسَلَنِي فَقَالَ اقْرَأْ ‏.‏ قَالَ قُلْتُ مَ�� أَنَا بِقَارِئٍ - قَالَ - فَأَخَذَنِي فَغَطَّنِي الثَّانِيَةَ حَتَّى بَلَغَ مِنِّي الْجَهْدَ ثُمَّ أَرْسَلَنِي فَقَالَ اقْرَأْ ‏.‏ فَقُلْتُ مَا أَنَا بِقَارِئٍ فَأَخَذَنِي فَغَطَّنِي الثَّالِثَةَ حَتَّى بَلَغَ مِنِّي الْجَهْدَ ثُمَّ أَرْسَلَنِي ‏.‏ فَقَالَ ‏{‏ اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ * خَلَقَ الإِنْسَانَ مِنْ عَلَقٍ * اقْرَأْ وَرَبُّكَ الأَكْرَمُ * الَّذِي عَلَّمَ بِالْقَلَمِ * عَلَّمَ الإِنْسَانَ مَا لَمْ يَعْلَمْ‏}‏ ‏\"‏ ‏.‏ فَرَجَعَ بِهَا رَسُولُ اللَّهِ صلى الله عليه وسلم تَرْجُفُ بَوَادِرُهُ حَتَّى دَخَلَ عَلَى خَدِيجَةَ فَقَالَ ‏\"‏ زَمِّلُونِي زَمِّلُونِي ‏\"‏ ‏.‏ فَزَمَّلُوهُ حَتَّى ذَهَبَ عَنْهُ الرَّوْعُ ثُمَّ قَالَ لِخَدِيجَةَ ‏\"‏ أَىْ خَدِيجَةُ مَا لِي ‏\"‏ ‏.‏ وَأَخْبَرَهَا الْخَبَرَ قَالَ ‏\"‏ لَقَدْ خَشِيتُ عَلَى نَفْسِي ‏\"‏ ‏.‏ قَالَتْ لَهُ خَدِيجَةُ كَلاَّ أَبْشِرْ فَوَاللَّهِ لاَ يُخْزِيكَ اللَّهُ أَبَدًا وَاللَّهِ إِنَّكَ لَتَصِلُ الرَّحِمَ وَتَصْدُقُ الْحَدِيثَ وَتَحْمِلُ الْكَلَّ وَتَكْسِبُ الْمَعْدُومَ وَتَقْرِي الضَّيْفَ وَتُعِينُ عَلَى نَوَائِبِ الْحَقِّ ‏.‏ فَانْطَلَقَتْ بِهِ خَدِيجَةُ حَتَّى أَتَتْ بِهِ وَرَقَةَ بْنَ نَوْفَلِ بْنِ أَسَدِ بْنِ عَبْدِ الْعُزَّى وَهُوَ ابْنُ عَمِّ خَدِيجَةَ أَخِي أَبِيهَا وَكَانَ امْرَأً تَنَصَّرَ فِي الْجَاهِلِيَّةِ وَكَانَ يَكْتُبُ الْكِتَابَ الْعَرَبِيَّ وَيَكْتُبُ مِنَ الإِنْجِيلِ بِالْعَرَبِيَّةِ مَا شَاءَ اللَّهُ أَنْ يَكْتُبَ وَكَانَ شَيْخًا كَبِيرًا قَدْ عَمِيَ ‏.‏ فَقَالَتْ لَهُ خَدِيجَةُ أَىْ عَمِّ اسْمَعْ مِنِ ابْنِ أَخِيكَ ‏.‏ قَالَ وَرَقَةُ بْنُ نَوْفَلٍ يَا ابْنَ أَخِي مَاذَا تَرَى فَأَخْبَرَهُ رَسُولُ اللَّهِ صلى الله عليه وسلم خَبَرَ مَا رَآهُ فَقَالَ لَهُ وَرَقَةُ هَذَا النَّامُوسُ الَّذِي أُنْزِلَ عَلَى مُوسَى صلى الله عليه وسلم يَا لَيْتَنِي فِيهَا جَذَعًا يَا لَيْتَنِي أَكُونُ حَيًّا حِينَ يُخْرِجُكَ قَوْمُكَ ‏.‏ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم ‏\"‏ أَوَمُخْرِجِيَّ هُمْ ‏\"‏ ‏.‏ قَالَ وَرَقَةُ نَعَمْ لَمْ يَأْتِ رَجُلٌ قَطُّ بِمَا جِئْتَ بِهِ إِلاَّ عُودِيَ وَإِنْ يُدْرِكْنِي يَوْمُكَ أَنْصُرْكَ نَصْرًا مُؤَزَّرًا ‏\"‏ ‏.‏",
+        "type": "hadith",
+        "grade": "من الصحيحين",
+        "level": "intermediate",
+        "surah": null,
+        "source": "quranlab/hadith:muslim-ar",
+        "char_len": 2923,
+        "reference": "muslim:403",
+        "text_norm": "حدثني ابو الطاهر، احمد بن عمرو بن عبد الله بن عمرو بن سرح اخبرنا ابن وهب، قال اخبرني يونس، عن ابن شهاب، قال حدثني عروه بن الزبير، ان عائشه، زوج النبي صلي الله عليه وسلم اخبرته انها قالت كان اول ما بدئ به رسول الله صلي الله عليه وسلم من الوحي الرؤيا الصادقه في النوم فكان لا يري رؤيا الا جاءت مثل فلق الصبح ثم حبب اليه الخلاء فكان يخلو بغار حراء يتحنث فيه - وهو التعبد - الليالي اولات العدد قبل ان يرجع الي اهله ويتزود لذلك ثم يرجع الي خديجه فيتزود لمثلها حتي فجئه الحق وهو في غار حراء فجاءه الملك فقال اقرا ‏.‏ قال ‏\"‏ ما انا بقارئ - قال - فاخذني فغطني حتي بلغ مني الجهد ثم ارسلني فقال اقرا ‏.‏ قال قلت م�� انا بقارئ - قال - فاخذني فغطني الثانيه حتي بلغ مني الجهد ثم ارسلني فقال اقرا ‏.‏ فقلت ما انا بقارئ فاخذني فغطني الثالثه حتي بلغ مني الجهد ثم ارسلني ‏.‏ فقال ‏{‏ اقرا باسم ربك الذي خلق * خلق الانسان من علق * اقرا وربك الاكرم * الذي علم بالقلم * علم الانسان ما لم يعلم‏}‏ ‏\"‏ ‏.‏ فرجع بها رسول الله صلي الله عليه وسلم ترجف بوادره حتي دخل علي خديجه فقال ‏\"‏ زملوني زملوني ‏\"‏ ‏.‏ فزملوه حتي ذهب عنه الروع ثم قال لخديجه ‏\"‏ اي خديجه ما لي ‏\"‏ ‏.‏ واخبرها الخبر قال ‏\"‏ لقد خشيت علي نفسي ‏\"‏ ‏.‏ قالت له خديجه كلا ابشر فوالله لا يخزيك الله ابدا والله انك لتصل الرحم وتصدق الحديث وتحمل الكل وتكسب المعدوم وتقري الضيف وتعين علي نوائب الحق ‏.‏ فانطلقت به خديجه حتي اتت به ورقه بن نوفل بن اسد بن عبد العزي وهو ابن عم خديجه اخي ابيها وكان امرا تنصر في الجاهليه وكان يكتب الكتاب العربي ويكتب من الانجيل بالعربيه ما شاء الله ان يكتب وكان شيخا كبيرا قد عمي ‏.‏ فقالت له خديجه اي عم اسمع من ابن اخيك ‏.‏ قال ورقه بن نوفل يا ابن اخي ماذا تري فاخبره رسول الله صلي الله عليه وسلم خبر ما راه فقال له ورقه هذا الناموس الذي انزل علي موسي صلي الله عليه وسلم يا ليتني فيها جذعا يا ليتني اكون حيا حين يخرجك قومك ‏.‏ قال رسول الله صلي الله عليه وسلم ‏\"‏ اومخرجي هم ‏\"‏ ‏.‏ قال ورقه نعم لم يات رجل قط بما جئت به الا عودي وان يدركني يومك انصرك نصرا مؤزرا ‏\"‏ ‏.‏",
+        "attribution": null,
+        "authenticity": "sahih",
+        "translation_of_type": null,
+        "translation_of_book_id": null
+      }
+    }
+  ],
+  "station_passages": []
+}

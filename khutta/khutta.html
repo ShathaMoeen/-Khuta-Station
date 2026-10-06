@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KHUTA | خطى</title>
+    <link rel="stylesheet" href="khutta.css">
+</head>
+
+<body>
+
+<header id="header">
+
+    <a href="#home" class="brand">
+        <img src="photo_5913747965040332825_y.jpg" class="site-logo logo" alt="KHUTA">
+    </a>
+
+    <nav>
+        <a href="#home" data-i18n="navHome"></a>
+        <a href="#how" data-i18n="navHow"></a>
+        <a href="#journey" data-i18n="navJourney"></a>
+        <a href="#membership" data-i18n="navMembership"></a>
+    </nav>
+
+    <div class="actions">
+        <select id="langSelect" aria-label="language">
+            <option value="ar">العربية</option>
+            <option value="ur">اردو</option>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+        </select>
+        <button id="themeBtn" aria-label="theme">☾</button>
+    </div>
+
+</header>
+
+<main>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+
+        <img src="photo_5913747965040332825_y.jpg" class="hero-logo logo" alt="KHUTA">
+
+        <p class="eyebrow" data-i18n="heroEyebrow"></p>
+
+        <h1>
+            <span data-i18n="h1a"></span>
+            <br>
+            <span class="accent" data-i18n="h1b"></span>
+        </h1>
+
+        <p data-i18n="heroText"></p>
+
+        <div class="buttons">
+            <a class="primary" href="#journey" data-i18n="btnStart"></a>
+            <a class="secondary" href="#how" data-i18n="btnHow"></a>
+        </div>
+
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section">
+        <p class="eyebrow" data-i18n="howEyebrow"></p>
+        <h2 data-i18n="howTitle"></h2>
+        <p data-i18n="howText"></p>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey" class="section">
+
+        <p class="eyebrow" data-i18n="journeyEyebrow"></p>
+        <h2 data-i18n="journeyTitle"></h2>
+
+        <form id="journeyForm" class="journey-form">
+
+            <label>
+                <b data-i18n="language"></b>
+                <select id="languageSelect">
+                    <option value="Arabic">العربية</option>
+                    <option value="Urdu">اردو</option>
+                    <option value="English">English</option>
+                    <option value="French">Français</option>
+                </select>
+            </label>
+
+            <label>
+                <b data-i18n="level"></b>
+                <select id="levelSelect">
+                    <option value="Beginner" data-i18n="Beginner"></option>
+                    <option value="Intermediate" data-i18n="Intermediate"></option>
+                    <option value="Advanced" data-i18n="Advanced" selected></option>
+                </select>
+            </label>
+
+            <button type="submit" id="createBtn" class="primary" data-i18n="createCard"></button>
+
+        </form>
+
+        <div class="journey">
+            <div>
+                <b data-i18n="language"></b>
+                <span id="journeyLanguage">—</span>
+            </div>
+            <div>
+                <b data-i18n="level"></b>
+                <span id="journeyLevel">—</span>
+            </div>
+        </div>
+
+        <img src="photo_5913747965040332825_y.jpg" class="second-logo logo" alt="KHUTA">
+
+    </section>
+
+    <!-- MEMBERSHIP CARD -->
+    <section id="membership" class="section card-section">
+
+        <p class="eyebrow" data-i18n="membershipEyebrow"></p>
+        <h2 data-i18n="membershipTitle"></h2>
+
+        <div id="cardEmpty" class="card-empty" data-i18n="cardEmpty"></div>
+
+        <div class="card" id="memberCard" hidden>
+
+            <div class="card-head">
+                <img src="photo_5913747965040332825_y.jpg" class="card-logo logo" alt="KHUTA">
+                <span class="status">ACTIVE</span>
+            </div>
+
+            <div class="card-title">KHUTA MEMBERSHIP</div>
+
+            <div class="info">
+                <div>
+                    <small>ID</small>
+                    <b id="memberId">—</b>
+                </div>
+                <div>
+                    <small>LANGUAGE</small>
+                    <b id="memberLanguage">—</b>
+                </div>
+                <div>
+                    <small>PATH</small>
+                    <b id="memberPath">—</b>
+                </div>
+            </div>
+
+            <div class="card-bottom">
+                <div>
+                    <small>PRIVACY STATUS</small>
+                    <b>Anonymous (Zero Personal Data)</b>
+                </div>
+                <div id="qrcode"></div>
+            </div>
+
+        </div>
+
+        <p class="note" id="cardNote" data-i18n="cardNote" hidden></p>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+            <h3 data-i18n="footContact"></h3>
+            <a href="mailto:contact@khuta.example"> Email: khuta495@gmail.com</a>
+            <a href="tel:+966590331987">
+        phone: +966 590331987
+    </a>
+            <a href="#how" data-i18n="btnHow"></a>
+            <a href="#membership" data-i18n="navMembership"></a>
+        </div>
+
+        <div>
+            <h3 data-i18n="footFollow"></h3>
+            <div class="social">
+                <a href="https://x.com/khuta21" target="_blank" rel="noopener" aria-label="X">𝕏</a>
+                <a href="http://tiktok.com/@khuta377" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
+            </div>
+        </div>
+
+        <div>
+            <h3>KHUTA</h3>
+            <p data-i18n="footAbout"></p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © <span id="year"></span> KHUTA. <span data-i18n="rights"></span>
+    </div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="khutta.js"></script>
+
+</body>
+</html>

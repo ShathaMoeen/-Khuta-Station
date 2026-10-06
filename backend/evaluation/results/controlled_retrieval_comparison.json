@@ -1,0 +1,2015 @@
+{
+  "created_at": "2026-10-05T23:43:03.195503+00:00",
+  "evaluation_type": "fixed controlled-station retrieval; developer diagnostics",
+  "passage_count": 166774,
+  "embeddings_before": 13,
+  "vector_type": "vector(1536)",
+  "stored_vector_dimension": 1536,
+  "embedding_provider": "gemini",
+  "embedding_model": "gemini-embedding-2",
+  "configured_embedding_dimension": 1536,
+  "actual_provider_output_dimension": 1536,
+  "methods": {
+    "lexical": {
+      "status": "measured",
+      "overall": {
+        "queries": 10,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0
+      },
+      "arabic": {
+        "queries": 5,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0
+      },
+      "english": {
+        "queries": 5,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0
+      }
+    },
+    "vector": {
+      "status": "measured",
+      "overall": {
+        "queries": 10,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0
+      },
+      "arabic": {
+        "queries": 5,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0
+      },
+      "english": {
+        "queries": 5,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0
+      }
+    },
+    "hybrid": {
+      "status": "measured",
+      "overall": {
+        "queries": 10,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0
+      },
+      "arabic": {
+        "queries": 5,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0
+      },
+      "english": {
+        "queries": 5,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0
+      }
+    }
+  },
+  "cases": {
+    "lexical": [
+      {
+        "case_id": "ar_revelation_begin",
+        "question": "كيف بدأ نزول الوحي؟",
+        "language": "ar",
+        "station_code": "WAHY-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5",
+          "bukhari:3"
+        ],
+        "retrieved_references": [
+          "96:5",
+          "96:4",
+          "96:3",
+          "96:2",
+          "96:1"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "ar_badr",
+        "question": "ماذا يذكر القرآن عن بدر؟",
+        "language": "ar",
+        "station_code": "BADR-01",
+        "expected": [
+          "3:123",
+          "3:124",
+          "3:125",
+          "3:126",
+          "3:127"
+        ],
+        "retrieved_references": [
+          "3:127",
+          "3:126",
+          "3:125",
+          "3:124",
+          "3:123"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "b5a6e23fdd0972f4a538f875d6b4727b56e9ac1e",
+            "type": "quran",
+            "reference": "3:127",
+            "canonical_reference": "3:127",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "لِيَقْطَعَ طَرَفًا مِنَ الَّذِينَ كَفَرُوا أَوْ يَكْبِتَهُمْ فَيَنْقَلِبُوا خَائِبِينَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "088141735e5473ae8668268c4286cb1b8b726d65",
+            "type": "quran",
+            "reference": "3:126",
+            "canonical_reference": "3:126",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "وَمَا جَعَلَهُ اللَّهُ إِلَّا بُشْرَىٰ لَكُمْ وَلِتَطْمَئِنَّ قُلُوبُكُمْ بِهِ ۗ وَمَا النَّصْرُ إِلَّا مِنْ عِنْدِ اللَّهِ الْعَزِيزِ الْحَكِيمِ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "8b59347ff11f8dedc10cdfe3f1cce8e7caf2635f",
+            "type": "quran",
+            "reference": "3:125",
+            "canonical_reference": "3:125",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "بَلَىٰ ۚ إِنْ تَصْبِرُوا وَتَتَّقُوا وَيَأْتُوكُمْ مِنْ فَوْرِهِمْ هَٰذَا يُمْدِدْكُمْ رَبُّكُمْ بِخَمْسَةِ آلَافٍ مِنَ الْمَلَائِكَةِ مُسَوِّمِينَ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "4b6c9e9868c98250b8b1a5fa3d520d77613b5249",
+            "type": "quran",
+            "reference": "3:124",
+            "canonical_reference": "3:124",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "إِذْ تَقُولُ لِلْمُؤْمِنِينَ أَلَنْ يَكْفِيَكُمْ أَنْ يُمِدَّكُمْ رَبُّكُمْ بِثَلَاثَةِ آلَافٍ مِنَ الْمَلَائِكَةِ مُنْزَلِينَ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "74a24002de6cb4e43a98b054fab0130e1543019f",
+            "type": "quran",
+            "reference": "3:123",
+            "canonical_reference": "3:123",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "وَلَقَدْ نَصَرَكُمُ اللَّهُ بِبَدْرٍ وَأَنْتُمْ أَذِلَّةٌ ۖ فَاتَّقُوا اللَّهَ لَعَلَّكُمْ تَشْكُرُونَ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "ar_hijrah",
+        "question": "ماذا حدث أثناء الهجرة؟",
+        "language": "ar",
+        "station_code": "HIJRAH-01",
+        "expected": [
+          "9:40",
+          "bukhari:5807"
+        ],
+        "retrieved_references": [
+          "9:40"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "b1fc3f4c375823406cd257241fed68300c9e4af3",
+            "type": "quran",
+            "reference": "9:40",
+            "canonical_reference": "9:40",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "إِلَّا تَنْصُرُوهُ فَقَدْ نَصَرَهُ اللَّهُ إِذْ أَخْرَجَهُ الَّذِينَ كَفَرُوا ثَانِيَ اثْنَيْنِ إِذْ هُمَا فِي الْغَارِ إِذْ يَقُولُ لِصَاحِبِهِ لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا "
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "ar_hira",
+        "question": "ماذا حدث في غار حراء؟",
+        "language": "ar",
+        "station_code": "WAHY-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5",
+          "bukhari:3"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "ar_alaq",
+        "question": "ما الذي تقوله سورة العلق عن بداية الوحي؟",
+        "language": "ar",
+        "station_code": "QURAN-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:4",
+          "96:5",
+          "96:2",
+          "96:3"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 2.0067547457292676,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 2.0067547457292676,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 2.0067547457292676,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "en_revelation_begin",
+        "question": "How did revelation begin?",
+        "language": "en",
+        "station_code": "WAHY-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5",
+          "bukhari:3"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "en_badr",
+        "question": "What does the Quran say about Badr?",
+        "language": "en",
+        "station_code": "BADR-01",
+        "expected": [
+          "3:123",
+          "3:124",
+          "3:125",
+          "3:126",
+          "3:127"
+        ],
+        "retrieved_references": [
+          "3:123",
+          "3:124",
+          "3:125",
+          "3:126",
+          "3:127"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "74a24002de6cb4e43a98b054fab0130e1543019f",
+            "type": "quran",
+            "reference": "3:123",
+            "canonical_reference": "3:123",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "وَلَقَدْ نَصَرَكُمُ اللَّهُ بِبَدْرٍ وَأَنْتُمْ أَذِلَّةٌ ۖ فَاتَّقُوا اللَّهَ لَعَلَّكُمْ تَشْكُرُونَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "4b6c9e9868c98250b8b1a5fa3d520d77613b5249",
+            "type": "quran",
+            "reference": "3:124",
+            "canonical_reference": "3:124",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "إِذْ تَقُولُ لِلْمُؤْمِنِينَ أَلَنْ يَكْفِيَكُمْ أَنْ يُمِدَّكُمْ رَبُّكُمْ بِثَلَاثَةِ آلَافٍ مِنَ الْمَلَائِكَةِ مُنْزَلِينَ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "8b59347ff11f8dedc10cdfe3f1cce8e7caf2635f",
+            "type": "quran",
+            "reference": "3:125",
+            "canonical_reference": "3:125",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "بَلَىٰ ۚ إِنْ تَصْبِرُوا وَتَتَّقُوا وَيَأْتُوكُمْ مِنْ فَوْرِهِمْ هَٰذَا يُمْدِدْكُمْ رَبُّكُمْ بِخَمْسَةِ آلَافٍ مِنَ الْمَلَائِكَةِ مُسَوِّمِينَ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "088141735e5473ae8668268c4286cb1b8b726d65",
+            "type": "quran",
+            "reference": "3:126",
+            "canonical_reference": "3:126",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "وَمَا جَعَلَهُ اللَّهُ إِلَّا بُشْرَىٰ لَكُمْ وَلِتَطْمَئِنَّ قُلُوبُكُمْ بِهِ ۗ وَمَا النَّصْرُ إِلَّا مِنْ عِنْدِ اللَّهِ الْعَزِيزِ الْحَكِيمِ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "b5a6e23fdd0972f4a538f875d6b4727b56e9ac1e",
+            "type": "quran",
+            "reference": "3:127",
+            "canonical_reference": "3:127",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "لِيَقْطَعَ طَرَفًا مِنَ الَّذِينَ كَفَرُوا أَوْ يَكْبِتَهُمْ فَيَنْقَلِبُوا خَائِبِينَ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "en_hijrah",
+        "question": "What happened during the Hijrah?",
+        "language": "en",
+        "station_code": "HIJRAH-01",
+        "expected": [
+          "9:40",
+          "bukhari:5807"
+        ],
+        "retrieved_references": [
+          "9:40"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "b1fc3f4c375823406cd257241fed68300c9e4af3",
+            "type": "quran",
+            "reference": "9:40",
+            "canonical_reference": "9:40",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "إِلَّا تَنْصُرُوهُ فَقَدْ نَصَرَهُ اللَّهُ إِذْ أَخْرَجَهُ الَّذِينَ كَفَرُوا ثَانِيَ اثْنَيْنِ إِذْ هُمَا فِي الْغَارِ إِذْ يَقُولُ لِصَاحِبِهِ لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا "
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "en_hira",
+        "question": "What happened in the cave of Hira?",
+        "language": "en",
+        "station_code": "WAHY-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5",
+          "bukhari:3"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "en_alaq",
+        "question": "What does Surah Al-Alaq say about the beginning of revelation?",
+        "language": "en",
+        "station_code": "QURAN-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 2.0,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          }
+        ],
+        "status": "measured"
+      }
+    ],
+    "vector": [
+      {
+        "case_id": "ar_revelation_begin",
+        "question": "كيف بدأ نزول الوحي؟",
+        "language": "ar",
+        "station_code": "WAHY-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5",
+          "bukhari:3"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:3",
+          "96:5",
+          "96:2",
+          "96:4"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 2.7223243083793154,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 2.684787025267945,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 2.6700302362442065,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 2.666806499121647,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 2.650785550241019,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "ar_badr",
+        "question": "ماذا يذكر القرآن عن بدر؟",
+        "language": "ar",
+        "station_code": "BADR-01",
+        "expected": [
+          "3:123",
+          "3:124",
+          "3:125",
+          "3:126",
+          "3:127"
+        ],
+        "retrieved_references": [
+          "3:123",
+          "3:125",
+          "3:124",
+          "3:126",
+          "3:127"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "74a24002de6cb4e43a98b054fab0130e1543019f",
+            "type": "quran",
+            "reference": "3:123",
+            "canonical_reference": "3:123",
+            "source": "مصحف حفص",
+            "score": 2.7852912183193324,
+            "text_preview": "وَلَقَدْ نَصَرَكُمُ اللَّهُ بِبَدْرٍ وَأَنْتُمْ أَذِلَّةٌ ۖ فَاتَّقُوا اللَّهَ لَعَلَّكُمْ تَشْكُرُونَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "8b59347ff11f8dedc10cdfe3f1cce8e7caf2635f",
+            "type": "quran",
+            "reference": "3:125",
+            "canonical_reference": "3:125",
+            "source": "مصحف حفص",
+            "score": 2.6907479188515246,
+            "text_preview": "بَلَىٰ ۚ إِنْ تَصْبِرُوا وَتَتَّقُوا وَيَأْتُوكُمْ مِنْ فَوْرِهِمْ هَٰذَا يُمْدِدْكُمْ رَبُّكُمْ بِخَمْسَةِ آلَافٍ مِنَ الْمَلَائِكَةِ مُسَوِّمِينَ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "4b6c9e9868c98250b8b1a5fa3d520d77613b5249",
+            "type": "quran",
+            "reference": "3:124",
+            "canonical_reference": "3:124",
+            "source": "مصحف حفص",
+            "score": 2.685749152727519,
+            "text_preview": "إِذْ تَقُولُ لِلْمُؤْمِنِينَ أَلَنْ يَكْفِيَكُمْ أَنْ يُمِدَّكُمْ رَبُّكُمْ بِثَلَاثَةِ آلَافٍ مِنَ الْمَلَائِكَةِ مُنْزَلِينَ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "088141735e5473ae8668268c4286cb1b8b726d65",
+            "type": "quran",
+            "reference": "3:126",
+            "canonical_reference": "3:126",
+            "source": "مصحف حفص",
+            "score": 2.6750420361907623,
+            "text_preview": "وَمَا جَعَلَهُ اللَّهُ إِلَّا بُشْرَىٰ لَكُمْ وَلِتَطْمَئِنَّ قُلُوبُكُمْ بِهِ ۗ وَمَا النَّصْرُ إِلَّا مِنْ عِنْدِ اللَّهِ الْعَزِيزِ الْحَكِيمِ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "b5a6e23fdd0972f4a538f875d6b4727b56e9ac1e",
+            "type": "quran",
+            "reference": "3:127",
+            "canonical_reference": "3:127",
+            "source": "مصحف حفص",
+            "score": 2.6645394754115697,
+            "text_preview": "لِيَقْطَعَ طَرَفًا مِنَ الَّذِينَ كَفَرُوا أَوْ يَكْبِتَهُمْ فَيَنْقَلِبُوا خَائِبِينَ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "ar_hijrah",
+        "question": "ماذا حدث أثناء الهجرة؟",
+        "language": "ar",
+        "station_code": "HIJRAH-01",
+        "expected": [
+          "9:40",
+          "bukhari:5807"
+        ],
+        "retrieved_references": [
+          "9:40"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "b1fc3f4c375823406cd257241fed68300c9e4af3",
+            "type": "quran",
+            "reference": "9:40",
+            "canonical_reference": "9:40",
+            "source": "مصحف حفص",
+            "score": 2.673873741991904,
+            "text_preview": "إِلَّا تَنْصُرُوهُ فَقَدْ نَصَرَهُ اللَّهُ إِذْ أَخْرَجَهُ الَّذِينَ كَفَرُوا ثَانِيَ اثْنَيْنِ إِذْ هُمَا فِي الْغَارِ إِذْ يَقُولُ لِصَاحِبِهِ لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا "
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "ar_hira",
+        "question": "ماذا حدث في غار حراء؟",
+        "language": "ar",
+        "station_code": "WAHY-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5",
+          "bukhari:3"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:2",
+          "96:5",
+          "96:3",
+          "96:4"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 2.71562256887729,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 2.6583486447640436,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 2.657001537978248,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 2.656775760956968,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 2.628610474699457,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "ar_alaq",
+        "question": "ما الذي تقوله سورة العلق عن بداية الوحي؟",
+        "language": "ar",
+        "station_code": "QURAN-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 2.7909644370697984,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 2.761631772615529,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 2.7117816725169757,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 2.7104082530981284,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 2.6946461300776665,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "en_revelation_begin",
+        "question": "How did revelation begin?",
+        "language": "en",
+        "station_code": "WAHY-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5",
+          "bukhari:3"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:5",
+          "96:3",
+          "96:2",
+          "96:4"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 2.711875491216491,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 2.672201036417329,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 2.667041659086967,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 2.655488297706462,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 2.6465694205429933,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "en_badr",
+        "question": "What does the Quran say about Badr?",
+        "language": "en",
+        "station_code": "BADR-01",
+        "expected": [
+          "3:123",
+          "3:124",
+          "3:125",
+          "3:126",
+          "3:127"
+        ],
+        "retrieved_references": [
+          "3:123",
+          "3:125",
+          "3:126",
+          "3:124",
+          "3:127"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "74a24002de6cb4e43a98b054fab0130e1543019f",
+            "type": "quran",
+            "reference": "3:123",
+            "canonical_reference": "3:123",
+            "source": "مصحف حفص",
+            "score": 2.7933200371289315,
+            "text_preview": "وَلَقَدْ نَصَرَكُمُ اللَّهُ بِبَدْرٍ وَأَنْتُمْ أَذِلَّةٌ ۖ فَاتَّقُوا اللَّهَ لَعَلَّكُمْ تَشْكُرُونَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "8b59347ff11f8dedc10cdfe3f1cce8e7caf2635f",
+            "type": "quran",
+            "reference": "3:125",
+            "canonical_reference": "3:125",
+            "source": "مصحف حفص",
+            "score": 2.71095559466415,
+            "text_preview": "بَلَىٰ ۚ إِنْ تَصْبِرُوا وَتَتَّقُوا وَيَأْتُوكُمْ مِنْ فَوْرِهِمْ هَٰذَا يُمْدِدْكُمْ رَبُّكُمْ بِخَمْسَةِ آلَافٍ مِنَ الْمَلَائِكَةِ مُسَوِّمِينَ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "088141735e5473ae8668268c4286cb1b8b726d65",
+            "type": "quran",
+            "reference": "3:126",
+            "canonical_reference": "3:126",
+            "source": "مصحف حفص",
+            "score": 2.6959395849614793,
+            "text_preview": "وَمَا جَعَلَهُ اللَّهُ إِلَّا بُشْرَىٰ لَكُمْ وَلِتَطْمَئِنَّ قُلُوبُكُمْ بِهِ ۗ وَمَا النَّصْرُ إِلَّا مِنْ عِنْدِ اللَّهِ الْعَزِيزِ الْحَكِيمِ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "4b6c9e9868c98250b8b1a5fa3d520d77613b5249",
+            "type": "quran",
+            "reference": "3:124",
+            "canonical_reference": "3:124",
+            "source": "مصحف حفص",
+            "score": 2.690951301824756,
+            "text_preview": "إِذْ تَقُولُ لِلْمُؤْمِنِينَ أَلَنْ يَكْفِيَكُمْ أَنْ يُمِدَّكُمْ رَبُّكُمْ بِثَلَاثَةِ آلَافٍ مِنَ الْمَلَائِكَةِ مُنْزَلِينَ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "b5a6e23fdd0972f4a538f875d6b4727b56e9ac1e",
+            "type": "quran",
+            "reference": "3:127",
+            "canonical_reference": "3:127",
+            "source": "مصحف حفص",
+            "score": 2.681540968693679,
+            "text_preview": "لِيَقْطَعَ طَرَفًا مِنَ الَّذِينَ كَفَرُوا أَوْ يَكْبِتَهُمْ فَيَنْقَلِبُوا خَائِبِينَ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "en_hijrah",
+        "question": "What happened during the Hijrah?",
+        "language": "en",
+        "station_code": "HIJRAH-01",
+        "expected": [
+          "9:40",
+          "bukhari:5807"
+        ],
+        "retrieved_references": [
+          "9:40"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "b1fc3f4c375823406cd257241fed68300c9e4af3",
+            "type": "quran",
+            "reference": "9:40",
+            "canonical_reference": "9:40",
+            "source": "مصحف حفص",
+            "score": 2.6694423546401236,
+            "text_preview": "إِلَّا تَنْصُرُوهُ فَقَدْ نَصَرَهُ اللَّهُ إِذْ أَخْرَجَهُ الَّذِينَ كَفَرُوا ثَانِيَ اثْنَيْنِ إِذْ هُمَا فِي الْغَارِ إِذْ يَقُولُ لِصَاحِبِهِ لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا "
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "en_hira",
+        "question": "What happened in the cave of Hira?",
+        "language": "en",
+        "station_code": "WAHY-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5",
+          "bukhari:3"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:5",
+          "96:2",
+          "96:3",
+          "96:4"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 2.704137691382909,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 2.6595325102373373,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 2.6505683775651323,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 2.6430744952445075,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 2.625353127465413,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "en_alaq",
+        "question": "What does Surah Al-Alaq say about the beginning of revelation?",
+        "language": "en",
+        "station_code": "QURAN-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 2.8027059662973186,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 2.7644378052837357,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 2.72238817802116,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 2.7215093012126497,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 2.710360050201421,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          }
+        ],
+        "status": "measured"
+      }
+    ],
+    "hybrid": [
+      {
+        "case_id": "ar_revelation_begin",
+        "question": "كيف بدأ نزول الوحي؟",
+        "language": "ar",
+        "station_code": "WAHY-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5",
+          "bukhari:3"
+        ],
+        "retrieved_references": [
+          "96:5",
+          "96:3",
+          "96:1",
+          "96:4",
+          "96:2"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 0.032266458495966696,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 0.03200204813108039,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 0.03177805800756621,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 0.0315136476426799,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 0.03125,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "ar_badr",
+        "question": "ماذا يذكر القرآن عن بدر؟",
+        "language": "ar",
+        "station_code": "BADR-01",
+        "expected": [
+          "3:123",
+          "3:124",
+          "3:125",
+          "3:126",
+          "3:127"
+        ],
+        "retrieved_references": [
+          "3:123",
+          "3:125",
+          "3:124",
+          "3:126",
+          "3:127"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "74a24002de6cb4e43a98b054fab0130e1543019f",
+            "type": "quran",
+            "reference": "3:123",
+            "canonical_reference": "3:123",
+            "source": "مصحف حفص",
+            "score": 0.03278688524590164,
+            "text_preview": "وَلَقَدْ نَصَرَكُمُ اللَّهُ بِبَدْرٍ وَأَنْتُمْ أَذِلَّةٌ ۖ فَاتَّقُوا اللَّهَ لَعَلَّكُمْ تَشْكُرُونَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "8b59347ff11f8dedc10cdfe3f1cce8e7caf2635f",
+            "type": "quran",
+            "reference": "3:125",
+            "canonical_reference": "3:125",
+            "source": "مصحف حفص",
+            "score": 0.03200204813108039,
+            "text_preview": "بَلَىٰ ۚ إِنْ تَصْبِرُوا وَتَتَّقُوا وَيَأْتُوكُمْ مِنْ فَوْرِهِمْ هَٰذَا يُمْدِدْكُمْ رَبُّكُمْ بِخَمْسَةِ آلَافٍ مِنَ الْمَلَائِكَةِ مُسَوِّمِينَ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "4b6c9e9868c98250b8b1a5fa3d520d77613b5249",
+            "type": "quran",
+            "reference": "3:124",
+            "canonical_reference": "3:124",
+            "source": "مصحف حفص",
+            "score": 0.03200204813108039,
+            "text_preview": "إِذْ تَقُولُ لِلْمُؤْمِنِينَ أَلَنْ يَكْفِيَكُمْ أَنْ يُمِدَّكُمْ رَبُّكُمْ بِثَلَاثَةِ آلَافٍ مِنَ الْمَلَائِكَةِ مُنْزَلِينَ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "088141735e5473ae8668268c4286cb1b8b726d65",
+            "type": "quran",
+            "reference": "3:126",
+            "canonical_reference": "3:126",
+            "source": "مصحف حفص",
+            "score": 0.03125,
+            "text_preview": "وَمَا جَعَلَهُ اللَّهُ إِلَّا بُشْرَىٰ لَكُمْ وَلِتَطْمَئِنَّ قُلُوبُكُمْ بِهِ ۗ وَمَا النَّصْرُ إِلَّا مِنْ عِنْدِ اللَّهِ الْعَزِيزِ الْحَكِيمِ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "b5a6e23fdd0972f4a538f875d6b4727b56e9ac1e",
+            "type": "quran",
+            "reference": "3:127",
+            "canonical_reference": "3:127",
+            "source": "مصحف حفص",
+            "score": 0.03076923076923077,
+            "text_preview": "لِيَقْطَعَ طَرَفًا مِنَ الَّذِينَ كَفَرُوا أَوْ يَكْبِتَهُمْ فَيَنْقَلِبُوا خَائِبِينَ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "ar_hijrah",
+        "question": "ماذا حدث أثناء الهجرة؟",
+        "language": "ar",
+        "station_code": "HIJRAH-01",
+        "expected": [
+          "9:40",
+          "bukhari:5807"
+        ],
+        "retrieved_references": [
+          "9:40"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "b1fc3f4c375823406cd257241fed68300c9e4af3",
+            "type": "quran",
+            "reference": "9:40",
+            "canonical_reference": "9:40",
+            "source": "مصحف حفص",
+            "score": 0.03278688524590164,
+            "text_preview": "إِلَّا تَنْصُرُوهُ فَقَدْ نَصَرَهُ اللَّهُ إِذْ أَخْرَجَهُ الَّذِينَ كَفَرُوا ثَانِيَ اثْنَيْنِ إِذْ هُمَا فِي الْغَارِ إِذْ يَقُولُ لِصَاحِبِهِ لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا "
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "ar_hira",
+        "question": "ماذا حدث في غار حراء؟",
+        "language": "ar",
+        "station_code": "WAHY-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5",
+          "bukhari:3"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:5",
+          "96:4"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 0.03278688524590164,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 0.03225806451612903,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 0.03149801587301587,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 0.03125763125763126,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 0.031009615384615385,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "ar_alaq",
+        "question": "ما الذي تقوله سورة العلق عن بداية الوحي؟",
+        "language": "ar",
+        "station_code": "QURAN-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:2",
+          "96:4",
+          "96:3",
+          "96:5"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 0.03278688524590164,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 0.031754032258064516,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 0.031754032258064516,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 0.03125763125763126,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 0.03125763125763126,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "en_revelation_begin",
+        "question": "How did revelation begin?",
+        "language": "en",
+        "station_code": "WAHY-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5",
+          "bukhari:3"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:5",
+          "96:4"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 0.03278688524590164,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 0.031754032258064516,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 0.031746031746031744,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 0.0315136476426799,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 0.031009615384615385,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "en_badr",
+        "question": "What does the Quran say about Badr?",
+        "language": "en",
+        "station_code": "BADR-01",
+        "expected": [
+          "3:123",
+          "3:124",
+          "3:125",
+          "3:126",
+          "3:127"
+        ],
+        "retrieved_references": [
+          "3:123",
+          "3:125",
+          "3:124",
+          "3:126",
+          "3:127"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "74a24002de6cb4e43a98b054fab0130e1543019f",
+            "type": "quran",
+            "reference": "3:123",
+            "canonical_reference": "3:123",
+            "source": "مصحف حفص",
+            "score": 0.03278688524590164,
+            "text_preview": "وَلَقَدْ نَصَرَكُمُ اللَّهُ بِبَدْرٍ وَأَنْتُمْ أَذِلَّةٌ ۖ فَاتَّقُوا اللَّهَ لَعَلَّكُمْ تَشْكُرُونَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "8b59347ff11f8dedc10cdfe3f1cce8e7caf2635f",
+            "type": "quran",
+            "reference": "3:125",
+            "canonical_reference": "3:125",
+            "source": "مصحف حفص",
+            "score": 0.03200204813108039,
+            "text_preview": "بَلَىٰ ۚ إِنْ تَصْبِرُوا وَتَتَّقُوا وَيَأْتُوكُمْ مِنْ فَوْرِهِمْ هَٰذَا يُمْدِدْكُمْ رَبُّكُمْ بِخَمْسَةِ آلَافٍ مِنَ الْمَلَائِكَةِ مُسَوِّمِينَ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "4b6c9e9868c98250b8b1a5fa3d520d77613b5249",
+            "type": "quran",
+            "reference": "3:124",
+            "canonical_reference": "3:124",
+            "source": "مصحف حفص",
+            "score": 0.031754032258064516,
+            "text_preview": "إِذْ تَقُولُ لِلْمُؤْمِنِينَ أَلَنْ يَكْفِيَكُمْ أَنْ يُمِدَّكُمْ رَبُّكُمْ بِثَلَاثَةِ آلَافٍ مِنَ الْمَلَائِكَةِ مُنْزَلِينَ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "088141735e5473ae8668268c4286cb1b8b726d65",
+            "type": "quran",
+            "reference": "3:126",
+            "canonical_reference": "3:126",
+            "source": "مصحف حفص",
+            "score": 0.03149801587301587,
+            "text_preview": "وَمَا جَعَلَهُ اللَّهُ إِلَّا بُشْرَىٰ لَكُمْ وَلِتَطْمَئِنَّ قُلُوبُكُمْ بِهِ ۗ وَمَا النَّصْرُ إِلَّا مِنْ عِنْدِ اللَّهِ الْعَزِيزِ الْحَكِيمِ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "b5a6e23fdd0972f4a538f875d6b4727b56e9ac1e",
+            "type": "quran",
+            "reference": "3:127",
+            "canonical_reference": "3:127",
+            "source": "مصحف حفص",
+            "score": 0.03076923076923077,
+            "text_preview": "لِيَقْطَعَ طَرَفًا مِنَ الَّذِينَ كَفَرُوا أَوْ يَكْبِتَهُمْ فَيَنْقَلِبُوا خَائِبِينَ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "en_hijrah",
+        "question": "What happened during the Hijrah?",
+        "language": "en",
+        "station_code": "HIJRAH-01",
+        "expected": [
+          "9:40",
+          "bukhari:5807"
+        ],
+        "retrieved_references": [
+          "9:40"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "b1fc3f4c375823406cd257241fed68300c9e4af3",
+            "type": "quran",
+            "reference": "9:40",
+            "canonical_reference": "9:40",
+            "source": "مصحف حفص",
+            "score": 0.03278688524590164,
+            "text_preview": "إِلَّا تَنْصُرُوهُ فَقَدْ نَصَرَهُ اللَّهُ إِذْ أَخْرَجَهُ الَّذِينَ كَفَرُوا ثَانِيَ اثْنَيْنِ إِذْ هُمَا فِي الْغَارِ إِذْ يَقُولُ لِصَاحِبِهِ لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا "
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "en_hira",
+        "question": "What happened in the cave of Hira?",
+        "language": "en",
+        "station_code": "WAHY-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5",
+          "bukhari:3"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:2",
+          "96:5",
+          "96:3",
+          "96:4"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 0.03278688524590164,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 0.03200204813108039,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 0.0315136476426799,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 0.03149801587301587,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 0.031009615384615385,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          }
+        ],
+        "status": "measured"
+      },
+      {
+        "case_id": "en_alaq",
+        "question": "What does Surah Al-Alaq say about the beginning of revelation?",
+        "language": "en",
+        "station_code": "QURAN-01",
+        "expected": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5"
+        ],
+        "retrieved_references": [
+          "96:1",
+          "96:2",
+          "96:3",
+          "96:4",
+          "96:5"
+        ],
+        "ranked": [
+          {
+            "rank": 1,
+            "passage_id": "4501640cbf4bf52e349fb9ea12c1bb2fec492289",
+            "type": "quran",
+            "reference": "96:1",
+            "canonical_reference": "96:1",
+            "source": "مصحف حفص",
+            "score": 0.03278688524590164,
+            "text_preview": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          },
+          {
+            "rank": 2,
+            "passage_id": "be78d863615f938338f255ea51c27c9ca349686c",
+            "type": "quran",
+            "reference": "96:2",
+            "canonical_reference": "96:2",
+            "source": "مصحف حفص",
+            "score": 0.03225806451612903,
+            "text_preview": "خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ"
+          },
+          {
+            "rank": 3,
+            "passage_id": "37abf956c3134f77007b4e491765708e9a34b09e",
+            "type": "quran",
+            "reference": "96:3",
+            "canonical_reference": "96:3",
+            "source": "مصحف حفص",
+            "score": 0.031746031746031744,
+            "text_preview": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ"
+          },
+          {
+            "rank": 4,
+            "passage_id": "432cc9475e5938c28ef2fa778f77c6bd117c2100",
+            "type": "quran",
+            "reference": "96:4",
+            "canonical_reference": "96:4",
+            "source": "مصحف حفص",
+            "score": 0.03125,
+            "text_preview": "الَّذِي عَلَّمَ بِالْقَلَمِ"
+          },
+          {
+            "rank": 5,
+            "passage_id": "18600315950025708ffe7bdb7543dac606a886b6",
+            "type": "quran",
+            "reference": "96:5",
+            "canonical_reference": "96:5",
+            "source": "مصحف حفص",
+            "score": 0.03076923076923077,
+            "text_preview": "عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ"
+          }
+        ],
+        "status": "measured"
+      }
+    ]
+  },
+  "selected_strategy": "lexical"
+}

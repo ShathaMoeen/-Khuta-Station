@@ -1,0 +1,15 @@
+.env
+backend/.env
+*.env
+.venv/
+backend/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+pytest-cache-files-*/
+backend/.tmp/
+
+islamic_data/
+khuta_database.sql
+khuta_database.backup
+khuta-postgres.tar

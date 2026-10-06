@@ -1,0 +1,4 @@
+code,name,topic,location,lang,level,title,body,source_note
+ST-01,محطة تجريبية 1,تجربة,المدخل,ar,beginner,نص تجريبي,نص تجريبي يُستبدل بنص المعرض الفعلي,تجريبي
+ST-01,Test station 1,test,Entrance,en,beginner,Sample text,Sample text to be replaced with the real exhibition text,sample
+ST-02,محطة تجريبية 2,تجربة,القاعة الأولى,ar,beginner,نص تجريبي,نص تجريبي يُستبدل بنص المعرض الفعلي,تجريبي
